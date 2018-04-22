@@ -12,9 +12,9 @@ if (isset($output) && is_numeric($output)) {
 			),
 			array(
 				'media_style' => 'onImage',
+				'media_link' => 'direct',
 				'styleName' => 'm_article_sq_crop'
-			),
-			url('media/' . $output)
+			)
 		);
 	} else {
 		print l('<img src="' . image_style_url('medium', $file->uri) . '" />', 'media/' . $output, array('html' => TRUE));

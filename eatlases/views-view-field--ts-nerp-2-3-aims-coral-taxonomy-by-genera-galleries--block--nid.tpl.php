@@ -21,10 +21,10 @@ if (isset($output) && is_numeric($output)) {
 				),
 				array(
 					'media_style' => 'onImage',
+					'media_link' => 'direct',
 					'media_title' => $node->title,
 					'styleName' => 'm_article_sq_crop'
-				),
-				url('node/' . $output)
+				)
 			);
 		}
 	} else {

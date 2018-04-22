@@ -33,9 +33,9 @@ if (isset($output) && is_numeric($output)) {
 				),
 				array(
 					'showMetadata' => false,
-					'media_style' => 'gallery'
-				),
-				url('media/' . $output)
+					'media_style' => 'gallery',
+					'media_link' => 'direct'
+				)
 			);
 		} else {
 			print l('<img src="' . image_style_url('medium', $file->uri) . '" />', 'media/' . $output, array('html' => TRUE));

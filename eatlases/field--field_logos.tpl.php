@@ -11,9 +11,9 @@
 							$item,
 							array(
 								'showMetadata' => false,
-								'media_style' => 'none'
-							),
-							url('media/' . $item['#file']->fid)
+								'media_style' => 'none',
+								'media_link' => 'direct'
+							)
 						);
 					} else {
 						print render($item);
