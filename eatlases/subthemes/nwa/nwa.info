@@ -1,0 +1,34 @@
+; $Id: ereefs.info,v 1.3 2013/01/15 13:04:32 lioz Exp $
+
+name = North West Atlas
+
+description = North West Atlas theme
+
+core = 7.x
+
+base theme = eatlases
+
+stylesheets[all][] = css/nwa.css
+stylesheets[print][] = css/nwa_print.css
+
+; Twitter
+scripts[] = ../../../../libraries/twitter-widgets/twitter-widgets.js
+
+; Define new block regions
+; * "Floating left sidebar": (private) Display the admin menu outside the page block, to preserve the layout
+; NOTE: Regions configuration do not inherit from parent.
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[sidebar_float] = Floating left sidebar
+regions[help] = Help
+
+regions[header] = Header
+regions[header_print] = Print Header
+regions[banner] = Banner
+regions[content] = Content
+regions[footer_print] = Print Footer
+regions[footer] = Footer
+
+; Reserved regions; to render Drupal elements such as the Admin menu
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom

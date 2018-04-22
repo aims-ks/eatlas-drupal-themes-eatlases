@@ -1,0 +1,112 @@
+/**
+ * This CSS represent the rules related to the columns on the
+ * front pages (/home, /ts, etc)
+ */
+
+/**
+ * NOTE: The wrapper class is added by my clever hook_preprocess_block
+ *     You only have to define a "CSS class" in the view edition page
+ *     (advanced section) and the wrapper class will be magically added.
+ *     see: template.php
+ */
+.right-column-wrapper,
+.left-column-wrapper {
+	width: 455px;
+}
+
+.column,
+.right-column,
+.left-column {
+	line-height: 1.8em;
+}
+
+.left-column-wrapper {
+	float: left;
+}
+
+.right-column-wrapper {
+	float: right
+}
+
+.column .views-row,
+.right-column .views-row,
+.left-column .views-row {
+	margin: 0;
+	clear: both;
+}
+
+.column ul,
+.right-column ul,
+.left-column ul {
+	list-style-type: none;
+}
+
+/* Field specific rules */
+.column .views-field-title,
+.right-column .views-field-title,
+.left-column .views-field-title {
+	border-top: 1px dashed #999999;
+	margin: 1em 0 0 0;
+	padding: 1em 0 0 0;
+	font-weight: bold;
+}
+
+/*
+.column,
+.left-column,
+.right-column {
+	border-bottom: 2px dashed #999999;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+*/
+
+.column .views-field-field-published-date,
+.right-column .views-field-field-published-date,
+.left-column .views-field-field-published-date,
+.column .views-field-field-ea-rss-pubdate,
+.right-column .views-field-field-ea-rss-pubdate,
+.left-column .views-field-field-ea-rss-pubdate,
+.column .views-field-field-ea-rss-creationdate,
+.right-column .views-field-field-ea-rss-creationdate,
+.left-column .views-field-field-ea-rss-creationdate {
+	font-size: 0.8em;
+}
+
+.column .views-field-field-published-date .field-content,
+.right-column .views-field-field-published-date .field-content,
+.left-column .views-field-field-published-date .field-content,
+.column .views-field-field-ea-rss-pubdate .field-content,
+.right-column .views-field-field-ea-rss-pubdate .field-content,
+.left-column .views-field-field-ea-rss-pubdate .field-content,
+.column .views-field-field-ea-rss-creationdate .field-content,
+.right-column .views-field-field-ea-rss-creationdate .field-content,
+.left-column .views-field-field-ea-rss-creationdate .field-content {
+	display: inline;
+	font-weight: bold;
+}
+
+.column .views-field-field-preview,
+.right-column .views-field-field-preview,
+.left-column .views-field-field-preview {
+	float: left;
+	margin: 1em 1em 0.5em 0;
+}
+
+.column .views-field-body,
+.right-column .views-field-body,
+.left-column .views-field-body {
+	margin-top: 0.75em;
+}
+
+/* Display a shadow on images (needed for feed items) */
+.column .views-field-body img,
+.right-column .views-field-body img,
+.left-column .views-field-body img,
+/* This one is for the node view, which should only be viewed by the
+   editors since the link direct to the MetadataViewer. */
+.node-eatlas-georss-item .field-name-body img {
+	border: 1px solid #CCCCCC;
+	padding: 3px;
+	box-shadow: 3px 3px 10px #888888;
+}

@@ -1,0 +1,146 @@
+/**
+ * Pages that has issues on small screens:
+ * - http://eatlas.org.au/ts/nerp-te/coral-photos
+ *   > Use tables
+ * - http://eatlas.org.au/ts/gallery/ts-scenery
+ *   > Use tables
+ */
+
+.region-header .block-menu,
+.region-header .block-menu ul.menu li:hover ul {
+	background-color: #034581;
+}
+.region-header .eatlas-responsive-menu-container ul.accordion-menu li.expanded ul li a {
+	background-color: #02325E;
+}
+
+.header {
+	background-color: #03457F;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.header.branding-background {
+	background-image: url('../img/ea-header-front-background-fish.jpg');
+}
+
+
+
+/* Sidebar menu */
+
+/* Hide the menu title */
+#sidebar-first .block-menu h2,
+#sidebar-first-mobile .block-menu h2 {
+	display: none;
+}
+/* Remove bullet and margin */
+#sidebar-first .block-menu ul,
+#sidebar-first .block-menu ul li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+/* First level menu */
+#sidebar-first .block-menu ul li {
+	margin: 1rem 0;
+	line-height: 1.5rem;
+}
+#sidebar-first .block-menu ul li,
+#sidebar-first-mobile .block-menu ul li {
+	font-size: 1.2rem;
+}
+
+/* Second+ level menu */
+#sidebar-first .block-menu ul li ul {
+	padding-left: 2rem;
+}
+#sidebar-first .block-menu ul li ul li,
+#sidebar-first-mobile .block-menu ul li ul li {
+	font-size: 1rem;
+}
+
+#sidebar-first-mobile {
+	display: none;
+	clear: both;
+}
+
+
+@media screen and (max-width: 1060px) {
+	/* Toggle navigation menus */
+	.header .eatlas-responsive-menu ul.menu {
+		display: none !important;
+	}
+	.eatlas-responsive-menu-container {
+		display: block;
+	}
+
+	/* Remove the sidebar-first (the 2nd level menu) */
+	#sidebar-first {
+		display: none;
+	}
+	#sidebar-first-mobile {
+		display: block;
+	}
+	.page-content_with-column {
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 1040px) {
+	/* Front page - 2 columns displayed as 1 */
+	#block-views-recent-articles-block,
+	#block-views-recent-datasets-block {
+		float: none;
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	/* Front page header - hide the 4 images when the page is too small */
+	.page-node-251 .region-header .header-tiles {
+		background-image: none !important;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	/* Reduce page margins */
+	#container {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}
+
+#page-content div.content div.card-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+}
+
+#page-content div.content div.card-row div.card-spacing {
+	margin: 0 25px 50px 25px;
+}
+
+#page-content div.content div.card-row div.card-spacing div.card {
+	width: 400px;
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+}
+
+#page-content div.content div.card-row div.card-spacing div.card a {
+	margin: 0;
+	text-align: left;
+	display: block;
+	padding: 10px;
+	font-weight: bold;
+}
+
+#page-content div.content div.card-row div.card-spacing div.card a:hover {
+	color: #046e9c;
+	text-decoration: none;
+}
+
+#page-content div.content div.card-row div.card-spacing div.card a img {
+	padding-bottom: 10px;
+}

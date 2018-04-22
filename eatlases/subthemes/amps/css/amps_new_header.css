@@ -1,0 +1,228 @@
+#main-menus .menu-right .block-search {
+	padding-top: 6px;
+	margin-top: 0;
+	float: none;
+}
+
+#main-menus .main-menus-content {
+	position: relative; /* For the search-overlay-content */
+	height: auto;
+
+	display: flex;
+	justify-content: space-between;
+}
+#main-menus .main-menus-content .contextual-links-region {
+	position: static; /* Reset - for search-overlay-content */
+}
+
+/* Fix navigation menu */
+#main-menus ul.menu li a,
+#main-menus ul.menu li a:hover {
+	padding: 0 20px 0 10px; /* Reduce space between menu items*/
+}
+/* Navigation menu CSS icon */
+#main-menus ul.menu li.last.menu-image-item a img,
+#main-menus ul.menu li.last.menu-image-item a:hover img {
+	float: none;
+	margin-bottom: -2px;
+}
+
+#main-menus .menu-left {
+	float: none;
+	width: 100%; /* For hamburger menu */
+}
+/* Allow the sub-menu to be larger than the parent (250px) */
+#main-menus .menu-left ul * {
+	max-width: none !important;
+}
+
+#main-menus .menu-right,
+#main-menus .menu-right .block-menu {
+	float: none;
+	text-align: right;
+	margin-right: 10px;
+}
+
+/* Highlight active-trail */
+#main-menus .menu-left ul .active-trail,
+#main-menus .menu-left ul .active-trail > a {
+	color: #FFFFFF;
+}
+
+
+#main-menus ul.accordion-menu li a {
+    color: #CCCCCC;
+}
+
+
+#block-search-form .content {
+	font-size: 16px;
+}
+
+
+/* Style the magnifier icon */
+.block-search .search-block-minimised .show-search-overlay {
+	cursor: pointer;
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin-top: 3px;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('/sites/all/themes/eatlases/subthemes/amps/img/search.svg');
+	opacity: 0.2;
+
+	transition: opacity 0.2s;
+}
+.block-search .search-block-minimised .show-search-overlay:hover {
+	opacity: 1;
+}
+
+/* Style the X (close search) icon */
+.block-search .search-block-overlay .close-search-overlay {
+	cursor: pointer;
+	width: 18px;
+	height: 18px;
+
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 14px 14px;
+	background-image: url('/sites/all/themes/eatlases/subthemes/eatlas/img/x_5A5A5A.svg');
+
+	/* Inspired on "input.form-submit" */
+	padding: 4px;
+	border: 1px solid #E4E4E4;
+	border-bottom-color: #B4B4B4;
+	border-left-color: #D2D2D2;
+	border-right-color: #D2D2D2;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background-color: #EEEEEE;
+}
+.block-search .search-block-overlay .close-search-overlay:hover {
+	/* Inspired on "input.form-submit:hover" */
+	border-top-color: #B4B4B4;
+	border-bottom-color: #E4E4E4;
+	background-color: #E2E2E2;
+}
+
+
+
+/* Hide the overlay search when page loads. */
+/* It will be shown by JavaScript if the user has JavaScript enabled. */
+.block-search .search-block-overlay {
+	display: none;
+}
+
+/* Grey overlay displayed on top of everything when the search is visible. */
+.block-search .search-block-overlay .search-overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #000000;
+	z-index: 1000;
+	opacity: 0.5;
+}
+
+/* Flex: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.block-search .search-block-overlay .search-overlay-content {
+	position: absolute; /* Required for the z-index to work (for some reason) */
+	top: 8px;
+	right: 0;
+	left: 0;
+
+	z-index: 1001; /* Render just above the search-overlay */
+
+	padding: 0 1em;
+	display: flex;
+	align-items: center;
+}
+/* Use all available space with the search input field */
+.block-search .search-block-overlay .search-overlay-content .form-type-textfield {
+	flex-grow: 1;
+	margin: 0 1em 0 0;
+}
+.block-search .search-block-overlay .search-overlay-content .form-type-textfield input {
+	width: 100%;
+}
+
+/* Search results */
+
+.search-result {
+	/* Do not wrap search results around other search results */
+	/* NOTE: IE add scroller when preview is zoomed out if overflow is auto */
+	overflow: hidden;
+}
+.search-result .search-preview {
+	float: left;
+	width: 250px;
+	min-height: 20px; /* Force the preview block to be present */
+}
+.search-result .title {
+	margin-top: 0;
+}
+.search-result .search-abstract {
+	overflow: auto;
+}
+/* Style for the little suttle string indicating which type of result it is ('article', 'image', etc) */
+.search-result .search-abstract .search-type {
+	color: #999999;
+	font-size: 0.8em;
+	text-align: right;
+}
+
+
+
+.amps-header-image {
+	/* Use "min-height" instead of "height" to allow very long title to stretch the header div */
+	min-height: 35em;
+
+	/* Cover the while header div with the background image (image URL specified in the HTML) */
+	background-position: center center;
+	background-size: cover;
+
+	/* Use table to position the title at the bottom of the header div (NOTE: IE has very bad flex support) */
+	display: table;
+	width: 100%;
+}
+
+.amps-header-image .amps-header-title {
+	/* Place the title at the bottom of the header div */
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+.amps-header-image .amps-header-title .page-title {
+	/* Centred white text, with gradient */
+	text-align: center;
+	color: #FFFFFF;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+
+	/* Font-size is dynamic, relative to width - fixed when the page is small (see bellow) */
+	font-size: 5vw;
+
+	/* Remove margin because the gradient is not included in the margin */
+	margin: 0;
+
+	/* Add some padding to create a prettier gradient behind the title, and prevent the title from touching the edge of the header div */
+	padding: 1em 0.5em 0.5em 0.5em;
+}
+
+
+@media screen and (max-width: 1000px) {
+	.amps-header-image {
+		/* Header div shrink when page get small */
+		min-height: 30vw;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.amps-header-image .amps-header-title .page-title {
+		/* Fixed title font size when page is large */
+		font-size: 3em;
+	}
+}

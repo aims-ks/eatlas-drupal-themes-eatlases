@@ -1,0 +1,110 @@
+/* Style for small devices or small browser window */
+
+/**
+ * Make everything maximum width 100%
+ *   Except: CKEditor and the navigation menu
+ * NOTE: For old browser that do not support the "NOT" selector
+ *   (IE 8), those styles will also affect CKEditor and the menu.
+ */
+body:not(.cke_editable) * {
+	max-width: 100% !important;
+}
+
+body .contextual-links-wrapper * {
+	max-width: none !important;
+}
+
+body .leaflet-container * {
+	max-width: none !important;
+}
+
+.region-header ul.menu {
+	max-width: none !important;
+}
+
+body .flexslider * {
+	max-width: none !important;
+}
+body .flexslider img {
+	max-width: 100% !important;
+}
+
+/* Node edition form - do not make the bottom section "max-width: 100%";
+ * it breaks the design when the page is small. */
+#block-system-main .vertical-tabs ul {
+	max-width: none !important;
+}
+
+/* Keep image aspect ratio (it works because the image resize module change the image natural dimensions) */
+body:not(.cke_editable) img {
+	height: auto !important;
+}
+
+/* Youtube Video */
+/**
+ * Example:
+ * <div style="width:700px; margin:0 auto;"> <!-- Video max width, centered -->
+ *   <div class="youtube_video"> <!-- Take care of keeping the video aspect ratio -->
+ *     <iframe src="https://www.youtube.com/embed/..." frameborder="0" allowfullscreen></iframe>
+ *   </div>
+ * </div>
+ **/
+.youtube_video {
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.8%;
+	position: relative;
+}
+.youtube_video iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0; top: 0;
+}
+
+/* Fix menu padding / margin to look larger and easier to "touch" with big fingers. */
+.eatlas-responsive-menu-container ul.accordion-menu,
+.eatlas-responsive-menu-container ul.accordion-menu li,
+.eatlas-responsive-menu-container ul.accordion-menu li ul {
+	margin: 0;
+	padding: 0;
+}
+
+.eatlas-responsive-menu-container ul.accordion-menu li a {
+	padding: 17px 0 17px 30px;
+}
+/* Indent sub-menus (up to 5 levels - including the top level) */
+.eatlas-responsive-menu-container ul.accordion-menu li ul li a {
+	padding: 13px 0 13px 60px;
+}
+.eatlas-responsive-menu-container ul.accordion-menu li ul li ul li a {
+	padding-left: 90px;
+}
+.eatlas-responsive-menu-container ul.accordion-menu li ul li ul li ul li a {
+	padding-left: 120px;
+}
+.eatlas-responsive-menu-container ul.accordion-menu li ul li ul li ul li ul li a {
+	padding-left: 150px;
+}
+
+/* Fix the search on all sub-sites. */
+/* NOTE: Sub-sites also needs specific fixes. */
+@media screen and (max-width: 770px) {
+	/* Fix the search form, on the search page */
+	.search-form #edit-basic .form-item-keys label {
+		display: block;
+	}
+	.search-result .search-preview {
+		zoom: 0.5;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	/* Fix the search form, on the search page */
+	.search-form #edit-basic .form-item-keys input {
+		width: 10em;
+	}
+	.search-result .search-preview {
+		display: none;
+	}
+}

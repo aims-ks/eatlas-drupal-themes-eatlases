@@ -1,0 +1,257 @@
+.region-header .block-menu,
+.region-header .block-menu ul.menu li:hover ul {
+	background-color: #0f354b;
+}
+.region-header .eatlas-responsive-menu-container ul.accordion-menu li.expanded ul li a {
+	background-color: #0A2433;
+}
+
+/* NWA Header menu has too many items in it... */
+.region-header .block-menu ul.menu li a,
+.region-header .block-menu ul.menu li a:hover {
+	padding-right: 22px;
+}
+
+.header {
+	background: #0f354b url('../img/map-banner.jpg') no-repeat center top;
+}
+#main-menus {
+	background-color: transparent;
+}
+
+.nwa-header img.nwa-logo {
+	margin: 5px 0 5px 0;
+}
+
+.page-node-1310 .page-title {
+	display: none;
+}
+
+/* Front page block layout */
+#block-block-32 {
+	float: right;
+	width: 455px;
+}
+#block-eatlas-image-slider-eatlas-image-slider-3 {
+	float: left;
+	width: 455px;
+}
+#block-block-32 h2,
+#block-eatlas-image-slider-eatlas-image-slider-3 h2 {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+/* Image slider */
+
+.articles-slider.flexslider {
+	width: 455px;
+	border: none;
+}
+.articles-slider.flexslider .slides li {
+	height: 400px;
+	background-color: #EEEEEE;
+}
+
+.articles-slider.flexslider .slides li .info {
+	margin: 5px 10px;
+}
+.articles-slider.flexslider .slides li .info .date {
+	font-weight: bold;
+	color: #777777;
+}
+.articles-slider.flexslider .slides li .info .title {
+	font-weight: bold;
+}
+.articles-slider.flexslider .slides li .info .summary {
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
+
+
+.flexslider {
+	border: none !important;
+}
+
+/* Restore style for the navigation arrows (on mouse over) */
+.flexslider .flex-direction-nav .flex-nav-next,
+.flexslider .flex-direction-nav .flex-nav-prev {
+	line-height: normal;
+}
+
+.eatlas-image-slider_3 {
+	width: 455px;
+	border: none;
+}
+.eatlas-image-slider_3 .slides li {
+	height: 400px;
+	background-color: #EEEEEE;
+}
+
+/* eAtlas Image Slider module */
+.eatlas-image-slider_3 .slides li h2,
+.eatlas-image-slider_3 .slides li .field-name-field-published-date,
+.eatlas-image-slider_3 .slides li .field-name-body {
+	margin: 5px 10px;
+}
+.eatlas-image-slider_3 .slides li h2 {
+	font-weight: bold !important;
+	font-size: 1em;
+}
+.eatlas-image-slider_3 .slides li .field-name-field-published-date {
+	font-weight: bold;
+	color: #777777;
+	font-size: 1em;
+}
+.eatlas-image-slider_3 .slides li .field-name-body {
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
+
+
+/* Announcements */
+#block-views-north-west-atlas-blog-block {
+	width: 100%;
+	margin-bottom: 2em;
+	overflow: auto;
+}
+#block-views-north-west-atlas-blog-block h2 {
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+#block-views-north-west-atlas-blog-block .views-row {
+	background-color: #EEEEEE;
+	margin-bottom: 0.5em;
+	float: left;
+	width: 455px;
+}
+
+#block-views-north-west-atlas-blog-block .views-row-odd {
+	float: left;
+}
+#block-views-north-west-atlas-blog-block .views-row-even {
+	float: right;
+}
+
+#block-views-north-west-atlas-blog-block .views-field-title {
+	margin: 0.5em 0.5em 0 0.5em;
+	font-weight: bold;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #046e9c;
+	position: relative;
+}
+#block-views-north-west-atlas-blog-block .views-field-title span.edit-link {
+	position: absolute;
+	right: 0;
+}
+#block-views-north-west-atlas-blog-block .views-field-body {
+	margin: 0 0.5em;
+	font-size: 0.8em;
+	overflow: hidden;
+	height: 108px;
+}
+#block-views-north-west-atlas-blog-block .views-field-field-ea-rss-link {
+	margin: 0 0.5em 0.5em 0.5em;
+	font-size: 0.8em;
+}
+#block-views-north-west-atlas-blog-block .views-field-body img {
+	width: 110px;
+	float:left;
+	margin-right: 0.5em;
+}
+
+/* Twitter */
+
+.twitter-container {
+	width: 455px;
+}
+
+/* Footer */
+
+#container {
+	margin-bottom: 0;
+}
+
+#footer {
+	margin: 0 -50px;
+	padding: 10px 50px 20px 50px;
+
+	background-color: #0f354b;
+	overflow: auto;
+	width: 100%;
+}
+
+
+#footer .logos {
+	float: left
+}
+#footer .logos img {
+	margin-right: 50px;
+}
+
+#footer .icons {
+	margin-top: 30px;
+	float: right;
+}
+#footer .icons img {
+	margin-left: 15px;
+}
+
+@media screen and (max-width: 1060px) {
+	/* Remove the sidebar-first (the 2nd level menu) */
+	#sidebar-first {
+		display: none;
+	}
+	.page-content_with-column {
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 1030px) {
+	#block-views-north-west-atlas-blog-block .views-row {
+		width: auto;
+	}
+
+	#block-views-north-west-atlas-blog-block .views-row-odd,
+	#block-views-north-west-atlas-blog-block .views-row-even {
+		float: none;
+	}
+
+	#block-eatlas-image-slider-eatlas-image-slider-3,
+	#block-block-32 {
+		float: none;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	/* Toggle navigation menus */
+	.region-header .eatlas-responsive-menu ul.menu {
+		display: none;
+	}
+	.eatlas-responsive-menu-container {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	/* Make the search field smaller */
+	#block-search-form input.form-text {
+		width: 10em;
+	}
+
+	/* Fix the search form, on the search page */
+	.search-results {
+		padding: 0;
+	}
+
+	#wrapper {
+		margin-bottom: 0;
+	}
+	#container {
+		margin: 0 5%;
+	}
+}

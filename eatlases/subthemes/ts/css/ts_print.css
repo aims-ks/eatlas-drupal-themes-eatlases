@@ -1,0 +1,10 @@
+.header {
+	background: none;
+}
+
+#block-views-recent-articles-ts-block,
+#block-views-recent-datasets-ts-block {
+	float: none;
+	width: auto;
+	overflow: auto;
+}

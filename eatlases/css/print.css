@@ -1,0 +1,54 @@
+.region-page-top, /* Admin menu */
+#main-menus, /* Search menu */
+.region-header,
+.messages, /* Drupal messages on top of the page */
+.sidebar_float, /* Half-hidden tool bar to the left, for authenticated users */
+#tabs-wrapper, /* View / Edit tabs, for authenticated users */
+#sidebar-first, /* Side bar for metadata (navigation, author, related content, etc.) */
+.image .enlarge,
+.edit-link, /* The gray edit link to the right of node titles */
+.contextual-links-trigger, /* The cog that appear when the mouse move on top of a configurable element */
+.region-footer {
+	display: none !important;
+}
+
+.region-header-print,
+.region-footer-print {
+	display: block;
+}
+.region-footer-print {
+	margin-top: 1em;
+}
+
+html,
+body,
+#wrapper,
+#container,
+.page-content_with-column,
+.page-content_full-width {
+	padding: 0 !important;
+	margin: 0 !important;
+	overflow: hidden;
+}
+
+* {
+	color: #000000;
+}
+
+body {
+	background-color: #FFFFFF;
+	/* Reduce the text size globally */
+	font-size: 0.7em;
+}
+
+#container h1 {
+	font-size: 18px; /* About 0.7 * 24px (adjusted to look good) */
+}
+
+/* It's better to display the text bellow the image when printing. */
+div.mediaframe_onImage div.metadata {
+	position: relative;
+}
+div.mediaframe_onImage div.title {
+	color: #000000;
+}

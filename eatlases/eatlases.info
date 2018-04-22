@@ -1,0 +1,41 @@
+name = eAtlases
+
+description = A multi-theme used for all the eAtlases
+
+core = 7.x
+
+engine = phptemplate
+
+stylesheets[all][] = css/main.css
+stylesheets[all][] = css/column.css
+stylesheets[all][] = css/form.css
+stylesheets[all][] = css/responsive.css
+stylesheets[print][] = css/print.css
+
+scripts[] = js/field_video_url_resize.js
+
+
+; Define new block regions
+; * "Floating left sidebar": (private) Display the admin menu outside the page block, to preserve the layout
+
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[sidebar_float] = Floating left sidebar
+regions[help] = Help
+
+regions[header] = Header
+regions[header_print] = Print Header
+regions[banner] = Banner
+regions[content] = Content
+regions[footer_print] = Print Footer
+regions[footer] = Footer
+
+; Reserved regions; to render Drupal elements such as the Admin menu
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+
+; Attributes used by the update module.
+; There fields needs to be removed if the module is migrated to Drupal.org
+project status url = "http://drupal.eatlas.org.au/themes"
+version = "7.x-2.33"
+project = "eatlases"

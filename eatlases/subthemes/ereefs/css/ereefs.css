@@ -1,0 +1,406 @@
+/**
+ * This stylesheet is loaded in the eReefs header block.
+ */
+#wrapper {
+	overflow: visible;
+	color: #113a5f;
+}
+
+/* Fix Drupal clearfix patch to allow sidebar to float to the left of the page content. */
+.node.clearfix:after {
+	clear: none;
+}
+
+.region-header .block-menu,
+.region-header .block-menu ul.menu li:hover ul,
+.region-header .block-menu ul.menu li.hover ul {
+	background-color: #113a5f;
+}
+
+/* Hide advanced search */
+#edit-advanced-search {
+	display: none;
+}
+
+/* Responsive Menus */
+
+/* Position the menu button */
+.region-header .eatlas-responsive-menu-container .eatlas-responsive-menu-button {
+	padding: 13px 0 13px 30px;
+}
+/* Definition of the menu button (image and size) */
+.region-header .eatlas-responsive-menu-container .eatlas-responsive-menu-button .eatlas-responsive-menu-button-image {
+	width: 22px;
+	height: 18px;
+	background-image: url(../img/menu-button.png);
+}
+
+.region-header .block-menu ul.menu li ul li,
+.region-header .eatlas-responsive-menu-container ul.accordion-menu li a {
+	border-top: 1px solid #9DB7CF;
+}
+
+.region-header .eatlas-responsive-menu-container ul.accordion-menu li.expanded ul li a {
+	background-color: #0C2A45;
+}
+
+/* Menu text colour and active trail */
+.region-header .block-menu ul.menu li a,
+.region-header .eatlas-responsive-menu-container ul.accordion-menu li a {
+	color: #9DB7CF;
+}
+.region-header .block-menu ul.menu li.active-trail > a,
+.region-header .eatlas-responsive-menu-container ul.accordion-menu li.active-trail > a {
+	color: #FFFFFF;
+}
+
+
+
+.header {
+	background: #00687F url('../img/headers/ereefs_header_0937_q60.jpg') no-repeat center top;
+}
+
+.ereefs-header {
+	margin: 0 auto;
+}
+
+.ereefs-header .attributions {
+	float: right;
+	margin-right: 5px;
+	color: #FFFFFF;
+	font-size: 0.7em;
+}
+
+.ereefs-header hr {
+	border: none;
+	background-color: #FFFFFF;
+}
+.ereefs-header .front hr {
+	margin: 8px 0 0 0;
+	height: 2px;
+}
+.ereefs-header .notfront hr {
+	margin: 4px 0 0 0;
+	height: 1px;
+}
+
+.ereefs-header .front {
+	padding: 20px 30px;
+}
+.ereefs-header .notfront {
+	padding: 0 30px 15px 30px;
+}
+
+#main-menus {
+	background-color:transparent;
+}
+
+/* eReefs - Home page */
+.ereefs-video {
+	text-align: center;
+}
+.ereefs-video div {
+	/* Blue box "placeholder" for the video, so the page do not look empty while the iFrame loads. */
+	background-color: #113A5F;
+	/* Remove the gap at the bottom of the iFrame */
+	line-height: 0;
+	/* Make its width as large as its content */
+	display: inline-block;
+}
+
+.page-node-1434 .page-title {
+	display: none;
+}
+
+.ereefs-home-page-title {
+	font-style: italic;
+	text-align: center;
+	font-size: 2em;
+	line-height: normal;
+
+	width: 800px;
+	margin: 40px auto 0 auto;
+}
+
+.ereefs-home-contact-button {
+	text-align: center;
+}
+.ereefs-home-contact-button a {
+	display: inline-block;
+	font-size: 1.5em;
+	background-color: #046e9c;
+	color: #fff;
+	padding: 15px 20px;
+	margin: 1em;
+	border-radius: 7px;
+}
+
+#page-content div.content div.ereefs-home div.card-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+}
+
+#page-content div.content div.ereefs-home div.card-row div.card-spacing {
+	margin: 0 15px 30px 15px;
+}
+
+#page-content div.content div.ereefs-home div.card-row div.card-spacing div.card {
+	width: 400px;
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+}
+
+#page-content div.content div.ereefs-home div.card-row div.card-spacing div.card a {
+	margin: 0;
+	text-align: left;
+	display: block;
+	padding: 10px;
+	font-weight: bold;
+}
+
+#page-content div.content div.ereefs-home div.card-row div.card-spacing div.card a:hover {
+	color: #046e9c;
+	text-decoration: none;
+}
+
+#page-content div.content div.ereefs-home div.card-row div.card-spacing div.card a img {
+	padding-bottom: 10px;
+}
+
+
+/* Contact us menu - shown in the header, just bellow the search field */
+#block-menu-menu-ereefs-contact-us-menu {
+	background-color:transparent;
+}
+#block-menu-menu-ereefs-contact-us-menu div.content {
+	float: right;
+}
+#block-menu-menu-ereefs-contact-us-menu ul.menu a {
+	color: #FFFFFF;
+	padding: 7px 20px;
+}
+
+
+/* Partners page */
+/* Hide partners - on view mode (not on edit mode) */
+.content #partners {
+	margin-top: 2em;
+}
+
+.content #partners .hidden {
+	display: none;
+}
+
+.content #partners h2.partner-separator {
+	border-top: 2px solid #113a5f;
+	margin: 2em 0;
+}
+.content #partners div.partner-separator {
+	margin: 1em 0;
+}
+
+/* Left column - Navigation menu */
+.ereefs-submenu ul.menu {
+	padding: 0;
+	margin: 0;
+}
+.ereefs-submenu ul.menu li {
+	list-style-image: none;
+	list-style-type: none;
+	margin: 0.5em 0;
+}
+
+
+
+/* Footer */
+
+.ereefs-footer {
+	clear: both;
+	background-color: #113A5F;
+	color: #FFFFFF;
+	font-size: 0.5em;
+	margin: 20px -50px -56px -50px;
+	padding: 20px 50px 50px 50px;
+}
+
+.logo-container {
+	text-align: center;
+}
+
+.logo-container img {
+	margin: 5px 18px;
+	vertical-align: middle;
+}
+
+.ereefs-footer hr {
+	border: none;
+	background-color: #FFFFFF;
+	height: 1px;
+	margin-bottom: 1px;
+}
+
+.ereefs-footer p {
+	border-top: 1px solid #FFFFFF;
+	opacity: 0.6;
+}
+
+.ereefs-member-photo,
+.view-ereefs-members .views-field-field-preview {
+	float: left;
+}
+.ereefs-member-photo .mediaframe_wikipedia,
+.view-ereefs-members .views-field-field-preview .mediaframe_wikipedia {
+	margin: 1.5em 1.5em 0.5em 0;
+}
+
+.field-name-field-position,
+.view-ereefs-members .views-field-field-position {
+	font-style: italic;
+}
+
+.view-ereefs-members {
+	line-height: 1.8em;
+}
+
+.view-ereefs-members .views-field-title {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.view-ereefs-members .views-row-odd,
+.view-ereefs-members .views-row-even {
+	margin-bottom: 2em;
+	overflow: auto; /* Alternative to clear:both */
+}
+
+.view-ereefs-members .views-row-last {
+	margin-bottom: 0;
+}
+
+#block-views-ereefs-members-block-4,
+#block-views-ereefs-members-block-5,
+#block-views-ereefs-members-block-6,
+#block-views-ereefs-members-block-7 {
+	margin-bottom: 3em;
+}
+
+
+
+
+/**
+ * Responsive design
+ */
+
+/* Larger screen */
+#wrapper,
+.ereefs-header,
+.page-content_full-width,
+.region-header .pagewidth,
+#main-menus .main-menus-content,
+.region-header .block-menu {
+	width: 1400px;
+}
+
+#wrapper {
+	padding: 1em 0 0 0;
+	margin-bottom: 5em;
+}
+.page-content_with-column,
+.page-content_full-width {
+	padding: 0 0 40px 0;
+}
+
+#container {
+	margin: 0 50px 0 50px;
+}
+
+#sidebar-first {
+	width: 200px;
+	font-size: 0.8em;
+}
+
+.page-content_with-column {
+	width: auto; /* Page width - sidebar width and some space between sidebar and page content */
+	float: none;
+	margin-left: 230px; /* Same as the sidebar-first width + 30px spacing */
+}
+
+/* Make media frame images looks more centered - should be set in the eAtlas Media frame module */
+div.mediaframe_wikipedia,
+div.mediaframe_gallery {
+	margin-left: -0.25em;
+}
+
+/* iPad = 768px x 1024px */
+@media screen and (max-width: 1100px) {
+	.ereefs-footer .logo-container img {
+		zoom: 0.8;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	/* Toggle navigation menus */
+	.region-header .eatlas-responsive-menu ul.menu {
+		display: none;
+	}
+	.eatlas-responsive-menu-container {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.ereefs-footer .logo-container img {
+		zoom: 0.7;
+	}
+
+	/* Remove the sidebar-first (the 2nd level menu) */
+	#sidebar-first {
+		display: none;
+	}
+	.page-content_with-column {
+		margin-left: 0;
+	}
+
+	/* Make the search field smaller */
+	#block-search-form input.form-text {
+		width: 10em;
+	}
+
+	/* Fix the search form, on the search page */
+	.search-results {
+		padding: 0;
+	}
+
+	/* Make the margin reduce as the page get smaller */
+	#wrapper {
+		margin-bottom: 0;
+	}
+	#container {
+		margin: 0 5%;
+	}
+	.ereefs-footer {
+		/* We added 10% to the container width (5% + 5%)
+		 * The container width is now 110%
+		 * To have the margin occupy that extra space, 
+		 * it needs to be 11% smaller (I not sure why, I can't figure out the maths...)
+		 * 11% devided by 2 (left and right) = 5.5% */
+		margin-left: -5.5%;
+		margin-right: -5.5%;
+		padding-left: 5.5%;
+		padding-right: 5.5%;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.ereefs-footer .logo-container img {
+		zoom: 0.5;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.ereefs-header .attributions {
+	        font-size: 0.5em;
+	}
+}
+

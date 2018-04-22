@@ -1,0 +1,73 @@
+/**
+ * Pages that has issues on small screens:
+ * - http://seltmp.eatlas.org.au/seltmp/map-gallery-2011 (2012, 2013 & 2014)
+ *   > Use tables
+ * - http://seltmp.eatlas.org.au/seltmp/survey-data
+ *   > The attachments table
+ */
+
+.header {
+	background: #FCD882 url('../img/background.jpg') no-repeat center 15px;
+	background-size: 1050px 270px;
+}
+
+.seltmp-header-front {
+	height: 210px;
+	position: relative;
+}
+.seltmp-header-front img.starfish {
+	position: absolute;
+	right: 40px;
+	top: 50px;
+	z-index:1;
+}
+
+.seltmp-header-front h1 {
+	margin: 0 0.5em;
+	color: #FFFFFF;
+}
+
+
+.seltmp-header {
+	height: 135px;
+	position: relative;
+}
+
+.seltmp-header img.starfish {
+	position: absolute;
+	right: 20px;
+	top: 50px;
+	z-index:1
+}
+
+.seltmp-header h1 {
+	margin: 0 0.5em;
+	color: #FFFFFF;
+}
+
+@media screen and (max-width: 1060px) {
+	/* Remove the sidebar-first (the 2nd level menu) */
+	#sidebar-first {
+		display: none;
+	}
+	.page-content_with-column {
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	/* Toggle navigation menus */
+	.region-header .eatlas-responsive-menu ul.menu {
+		display: none;
+	}
+	.eatlas-responsive-menu-container {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	/* Make the search field smaller */
+	#block-search-form input.form-text {
+		width: 10em;
+	}
+}

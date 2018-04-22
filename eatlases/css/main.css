@@ -1,0 +1,722 @@
+html {
+	width: 100%;
+}
+
+body {
+	background-color: #D9D9D9;
+	font-family: verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+
+	/* Force the body to take 100% of the page width instead of 100% of the browser width
+		(fix the issue of the header not continuing when scrolling right) */
+	float: left;
+	width: 100%;
+	min-width: 100%;
+}
+
+#container h1 {
+	/* Fix for Internet Explorer 8 */
+	font-size: 24px;
+}
+
+/* By default, H1 and H2 are the same size (1.5em)... */
+h2 {
+	font-size: 1.3em;
+}
+
+a:link,
+a:visited {
+	color: #046e9c;
+	text-decoration: none;
+}
+a:hover {
+	color: #95cae1;
+	text-decoration: underline;
+}
+
+figure {
+	margin: 0;
+}
+
+/* Breadcrumbs - Disabled (not usefull for the eatlas)
+ol.breadcrumb {
+	color: #7F7F7F;
+	margin: 1.5em 0 1em 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0.9em;
+}
+ol.breadcrumb li {
+	margin: 0 !important;
+	padding: 0 !important;
+	display: inline;
+}
+ol.breadcrumb li:after {
+	content: " > ";
+}
+ol.breadcrumb li.last:after {
+	content: normal;
+}
+*/
+
+.banner {
+	background-color: #FFFFFF;
+	/* Display background colour for children margin (collapsing margins) */
+	padding: 1px;
+}
+
+.eatlas-login,
+.eatlas-logout {
+	font-size: 0.8em;
+	text-align: right;
+	margin: 0;
+}
+/* Logout link - Can not click the link when the cog is over it. */
+.block-eatlas-login-block .contextual-links-wrapper {
+	margin-top: 15px;
+}
+
+/* Page width (Everything related to page width goes here) */
+
+.region-header .pagewidth,
+#main-menus .main-menus-content,
+.region-header .block-menu {
+	width: 1050px;
+	margin: 0 auto;
+}
+#wrapper {
+	width: 1050px;
+}
+
+.page-content_full-width {
+	width: 950px; /* Page width - padding of 50px (x2) */
+}
+
+#sidebar-first {
+	float: left;
+	width: 230px;
+}
+.page-content_with-column {
+	width: 700px; /* Page width - sidebar width and some space between sidebar and page content */
+	float: right;
+}
+
+/* Indent the first line of each paragraph - That's not as nice as I expected...
+#page-content p {
+	text-indent: 4em;
+}
+#page-content .media-image p {
+	text-indent: 0;
+}
+*/
+
+/* Fix table border issues */
+.content th {
+	border-bottom: none;
+	padding-right: 0;
+}
+.content tbody {
+	border-top: none;
+}
+
+/* Floating menu (for logged users) */
+
+.sidebar_float {
+	width: 200px;
+	position: absolute;
+	left: -150px;
+	margin-top: 10px;
+	opacity: 0.2;
+	background-color: #FFFFFF;
+
+	font-size: 0.8em;
+	line-height: 1.2em;
+}
+.sidebar_float:hover {
+	/* 500: On top of everything but the admin menu */
+	z-index: 500;
+	left: 0;
+	opacity: 1;
+}
+
+.sidebar_float h2 {
+	margin-top: 0;
+	font-size: 1.2em;
+}
+
+.sidebar_float .block {
+	border: 1px solid #046E9C;
+	padding: 0.5em 0.2em 1em 0.5em;
+	margin: 3px;
+}
+
+.sidebar_float ul,
+.sidebar_float ol {
+	margin: 0;
+	padding: 0;
+}
+.sidebar_float ol li,
+.sidebar_float ul li {
+	margin: 0.2em 0 0.2em 1.5em;
+	padding: 0;
+}
+
+/* Page header / menu layout */
+
+.header {
+	background-color: #034581;
+}
+
+.region-header {
+	padding: 0;
+	margin: 0 auto;
+}
+.region-header .content {
+	clear: both;
+}
+
+#wrapper {
+	background-color: #FFFFFF;
+	margin: 0 auto 2em auto;
+	/* This is a trick to include the inner element margin in this element (remove the gray line at the top of the page) */
+	overflow: auto;
+}
+#container {
+	margin: 1em 50px 40px 50px;
+}
+
+#main-menus .main-menus-content {
+	/* The height is needed for old IE browsers (IE 6 & 7) */
+	height: 40px;
+}
+
+#main-menus .menu-left {
+	float: left;
+}
+
+/* NOTE: The image in the menu is too big, the other menus has to be lowered down. */
+#main-menus ul.menu li a img {
+	margin-top: 5px;
+	float: left;
+}
+
+#main-menus .menu-right .block-menu {
+	margin-top: 14px;
+}
+#main-menus .menu-right .block-search {
+	margin-top: 6px;
+}
+#main-menus .menu-right,
+#main-menus .menu-right .block-menu,
+#main-menus .menu-right .block-search {
+	float: right;
+}
+
+#main-menus,
+#main-menus ul.menu li:hover ul {
+	background-color: #404040;
+}
+.region-header .block-menu,
+.region-header .block-menu ul.menu li:hover ul {
+	background-color: #287188;
+}
+.region-header .eatlas-responsive-menu-container ul.accordion-menu li.expanded ul li a {
+	background-color: #1F5B6E;
+}
+/* RSS Icon */
+.region-header .eatlas-responsive-menu-container {
+	position: relative;
+}
+.region-header .eatlas-responsive-menu-container ul.accordion-menu li.menu-image-item a {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	border: none;
+}
+
+#main-menus h2,
+.region-header .block-menu h2 {
+	display: none;
+}
+
+#block-search-form .content,
+#main-menus {
+	font-size: 16px;
+}
+.region-header .block-menu .content {
+	font-size: 18px;
+}
+
+#main-menus ul.menu li a,
+#main-menus ul.menu li a:hover {
+	height: 28px;
+	padding: 0 40px 0 10px;
+}
+
+.region-header .block-menu ul.menu li a,
+.region-header .block-menu ul.menu li a:hover {
+	height: 32px;
+	padding: 7px 40px 0 10px;
+}
+
+#main-menus ul.menu li a,
+#main-menus ul.menu li a:hover,
+#main-menus ul.accordion-menu li a,
+#main-menus ul.accordion-menu li a:hover,
+.region-header .block-menu ul.menu li a,
+.region-header .block-menu ul.menu li a:hover {
+	display: inline-block;
+	text-decoration: none;
+}
+/* Display an arrow pointing down, on menus that contains a sub-menu */
+#main-menus ul.menu li.expanded > a:after,
+#main-menus ul.accordion-menu li.expanded > a:after,
+.region-header .eatlas-responsive-menu-container ul.accordion-menu > li.expanded > a:after,
+.region-header .block-menu .content > ul.menu > li.expanded > a:after {
+	/* http://www.fileformat.info/info/unicode/char/25bc ▼ */
+	/* http://www.fileformat.info/info/unicode/char/25e2 ◢ */
+	/* http://www.fileformat.info/info/unicode/char/25be ▾ - Not supported by Android */
+	content: " ▼";
+}
+
+#main-menus ul.menu li a,
+#main-menus ul.accordion-menu li a {
+	color: #CCCCCC;
+}
+#main-menus ul.menu li a:hover,
+#main-menus ul.accordion-menu li a:hover {
+	color: #FFFFFF;
+}
+
+.region-header .block-menu ul.menu li a,
+.region-header .block-menu ul.menu li a:hover,
+.region-header .eatlas-responsive-menu-container ul.accordion-menu li a,
+.region-header .eatlas-responsive-menu-container ul.accordion-menu li a:hover {
+	color: #FFFFFF;
+}
+
+#main-menus ul.menu li ul li a,
+#main-menus ul.menu li ul li a:hover,
+.region-header .block-menu ul.menu li ul li a,
+.region-header .block-menu ul.menu li ul li a:hover {
+	padding: 7px 10px;
+	height: auto;
+}
+
+/* 3rd level+ menu - hidden */
+.region-header .block-menu ul.menu li ul li ul li {
+	display: none;
+}
+
+#main-menus ul.menu,
+#main-menus ul.menu li,
+.region-header .block-menu ul.menu,
+.region-header .block-menu ul.menu li {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	/* Fix IE7 bug: Menu items stack on top of each other without this (why ???) */
+	list-style-image: none;
+}
+
+#main-menus ul.menu li,
+.region-header .block-menu ul.menu li {
+	position: relative;
+}
+
+#main-menus ul.menu li ul,
+.region-header .block-menu ul.menu li ul {
+	z-index: 1000;
+	display: none;
+}
+
+#main-menus ul.menu li {
+	/* Fix IE7 bug: Page content displayed on top of the menu */
+	z-index: 10;
+}
+
+#main-menus ul.menu li ul li,
+.region-header .block-menu ul.menu li ul li {
+	display: block;
+	width: 250px;
+	margin-left: 0;
+}
+#main-menus ul.menu li ul li,
+#main-menus ul.accordion-menu li {
+	border-top: 1px dotted #999999;
+}
+#main-menus ul.accordion-menu li {
+	width: 100%;
+}
+.region-header .block-menu ul.menu li ul li,
+.region-header .eatlas-responsive-menu-container ul.accordion-menu li a {
+	border-top: 1px dotted #FFFFFF;
+}
+
+#main-menus ul.menu li:hover ul,
+.region-header .block-menu ul.menu li:hover ul {
+	display: block;
+	position: absolute;
+	left: 0;
+	margin: 0;
+	padding: 0 0 2px 0;
+}
+#main-menus ul.menu li:hover ul {
+	top: 28px;
+}
+.region-header .block-menu ul.menu li:hover ul {
+	top: 30px;
+}
+
+/* RSS Icon in the menu */
+.region-header .block-menu .menu-image-item {
+	float: right;
+}
+.region-header .block-menu .menu-image-item a {
+	padding: 10px 12px 0 10px !important;
+	height: auto !important;
+}
+
+.column-wrapper {
+	overflow: auto;
+}
+
+/* Home page */
+
+#footer {
+	clear: both;
+}
+
+#footer h2 {
+	border-bottom: 2px double #046E9C;
+}
+
+.mediaframe_wikipedia .metadata .description {
+	float: left;
+}
+.mediaframe_wikipedia .metadata .license {
+	float: right;
+}
+.mediaframe_wikipedia .metadata .license .verbose {
+	display: none;
+}
+
+/* RSS items / Article items / Project pages */
+
+.field-name-field-preview .preview-strip img,
+#sidebar-first .field-item-author .photo img {
+	border-radius: 5px;
+}
+
+.field-name-body {
+	line-height: 1.8em; /* Same as .cke_editable (eatlas_ckeditor_config module, css/eatlas_ckeditor_config_ckeditor.css) */
+}
+
+/* NOTE: The pager "ul" prefix is important, to override the default style */
+.book-navigation,
+ul.pager {
+	padding-top: 1em;
+}
+
+#sidebar-first {
+	margin-top: 25px;
+}
+#sidebar-first .label-suffix {
+	display: none; /* Remove the ":" after the label */
+}
+
+#sidebar-first .field-items {
+	width: 100%;
+}
+
+#sidebar-first .block,
+#sidebar-first .field {
+	margin-bottom: 2em;
+}
+#sidebar-first .field-item {
+	margin: 0 0 1em 0;
+}
+
+#sidebar-first h2, /* blocks */
+#sidebar-first .field-label {
+	margin: 0 0 1em 0;
+	color: #999999;
+	font-weight: normal;
+	font-size: 1.2em;
+}
+
+/* Attachments table */
+table.views-table,
+.node .field-name-field-file-attachments table {
+	margin-top: 1em;
+	border: solid 1px #CCCCCC;
+	width: 100%;
+}
+
+table.views-table th,
+table.views-table td,
+.node .field-name-field-file-attachments table th,
+.node .field-name-field-file-attachments table td {
+	vertical-align: top;
+	padding: 0 0.3em;
+}
+.node .field-name-field-file-attachments table th:last-child {
+	text-align: right;
+	padding-right: 2em;
+}
+.node .field-name-field-file-attachments table td:last-child {
+	/* Fix the width of the file size column.
+	There is no attribute on the columns so I have to use the CSS selector */
+	width: 7em;
+	text-align: right;
+}
+.node .field-name-field-file-attachments table .file img {
+	/* File icon - displayed slightly to high */
+	margin-bottom: -3px;
+}
+
+table.views-table th.views-field img {
+	margin: 0 0.5em;
+}
+table.views-table .views-field-type {
+	width: 8em;
+}
+table.views-table .views-field-field-authors {
+	width: 15em;
+}
+table.views-table .views-field-changed {
+	width: 9em;
+}
+
+/* Projects outputs and sidebar block list */
+#sidebar-first .item-list ul,
+#sidebar-first .item-list li {
+	list-style: none;
+	padding: 0;
+}
+#sidebar-first .item-list ul {
+	margin: 0;
+}
+#sidebar-first .item-list li {
+	margin: 0 0 1em 0;
+}
+#sidebar-first .item-list li .rss-title {
+	font-weight: normal;
+	line-height: 1.4em;
+	margin: 0;
+}
+#sidebar-first .item-list li .rss-date {
+	color: #999999;
+	margin: 0;
+}
+#sidebar-first .more-link,
+#sidebar-first .item-list li .rss-title {
+	font-size: 0.9em;
+}
+
+#sidebar-first .field-item-author {
+	/* CSS Trick to clearfix without breaking the layout */
+	overflow: hidden;
+}
+#sidebar-first .photo {
+	float: left;
+	margin-right: 1em;
+}
+#sidebar-first .info {
+	font-size: 0.9em;
+	color: #999999;
+}
+#sidebar-first .info .author-name {
+	color: #000000;
+	font-weight: bold;
+}
+
+#sidebar-first .field-name-field-related-content .field-item {
+	margin: 2em 0;
+}
+#sidebar-first .field-name-field-related-content .field-item .title {
+	width: 200px;
+	margin-top: 0.5em;
+}
+
+
+.node-article .field-name-field-preview {
+	text-align: center;
+}
+
+.node-article .field-name-field-published-date {
+	color: #999999;
+	font-size: 0.9em;
+	margin: 1em 0;
+	/* CSS Trick to get ride of the clearfix side-effect */
+	overflow: hidden;
+}
+
+.metadata-record-unpublished,
+.node-unpublished {
+	/* By default, unpublished node has a pink background... */
+	background-color: transparent;
+}
+/* NOTE: The background is not apply to the same element, so the can stack up instead of replacing each other (without having to use the multiple bg CSS trick). */
+.metadata-record-unpublished,
+.node-unpublished .field-name-body .field-items {
+	background-image: url('../img/unpublished.png');
+}
+.node-prepress .field-name-body {
+	background-image: url('../img/prepress.png');
+}
+.draft {
+	background-image: url('../img/draft.png');
+}
+
+/* Person / project files */
+.view-files .views-field {
+	margin-right: 3px;
+}
+
+.view-video {
+	position: relative;
+	width: 230px;
+}
+.view-video .no-preview {
+	width: 222px;
+	height: 222px;
+}
+
+.view-video .view-video-overlay {
+	position: absolute;
+	top:0; bottom: 0; right: 0; left: 0;
+	background: transparent url('../img/video-play-button.svg') no-repeat center center;
+	background-size: 150px;
+	opacity: 0.5;
+}
+.view-video .view-video-overlay:hover {
+	opacity: 1;
+}
+
+/* Forms */
+
+.form-select {
+	max-width: 900px;
+}
+.form-select[multiple] {
+	height: 15em;
+}
+
+
+/* Search */
+
+/* TODO DELETE - Moved to search.css */
+.search-result {
+	/* Do not wrap search results around other search results */
+	/* NOTE: IE add scroller when preview is zoomed out if overflow is auto */
+	overflow: hidden;
+}
+.search-result .search-preview {
+	float: left;
+	width: 250px;
+	min-height: 20px; /* Force the preview block to be present */
+}
+.search-result .title {
+	margin-top: 0;
+}
+.search-result .search-abstract {
+	overflow: auto;
+}
+/* Style for the little suttle string indicating which type of result it is ('article', 'image', etc) */
+.search-result .search-abstract .search-type {
+	color: #999999;
+	font-size: 0.8em;
+	text-align: right;
+}
+/* EO TODO DELETE */
+
+
+
+span.edit-link {
+	float: right;
+}
+span.edit-link a {
+	font-size: 0.6em;
+	font-weight: normal;
+	color: #999999;
+}
+
+.hide-overflow-wrapper {
+	overflow: hidden;
+}
+
+/* Articles */
+
+.field-name-field-related-content .preview,
+.field-name-field-project .preview {
+	float: left;
+	margin: 0 15px 10px 0;
+}
+.field-name-field-related-content .field-item,
+.field-name-field-project .field-item {
+	clear: left;
+}
+
+.field-name-field-project .field-item {
+	border-top: 1px dashed #999999;
+	margin: 1em 0 0 0;
+	padding: 1em 0 0 0;
+}
+
+.field-name-field-video-url iframe {
+	width: 100%;
+	background-color: #000000;
+}
+
+.field-name-field-video-attributions .video-attributions {
+	font-size: 0.8em;
+	color: #666666;
+	text-align: right;
+}
+
+.gallery-image {
+	margin: 0.5em;
+}
+
+/* Dataset teasers (Mini records) */
+.node-dataset-teaser .preview-image {
+	float: left;
+	margin-right: 1em;
+}
+.node-dataset-teaser .label {
+	font-weight: bold;
+}
+
+.node-dataset-teaser .metadata .identification-info {
+	width: 490px;
+	float: left;
+}
+.node-dataset-teaser .metadata .distribution-info {
+	width: 440px;
+	float: right;
+}
+
+.views-field-field-ea-rss-authors .field-content,
+.views-field-field-ds-authors .field-content,
+.views-field-field-custom-authors .field-content {
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+/* Print */
+.region-header-print,
+.region-footer-print {
+	display: none;
+}
+
+/* View grid - using Flex layout */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.eatlases_view_grid {
+	display: flex;
+	flex-wrap: wrap;
+}

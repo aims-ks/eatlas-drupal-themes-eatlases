@@ -1,0 +1,485 @@
+/**
+ * This stylesheet is loaded in the eReefs header block.
+ */
+body {
+	background-color: #000000;
+	font-family: "Muli", "Hoefler Text", Georgia, serif;
+}
+
+#wrapper {
+	overflow: visible;
+	color: #113a5f;
+	margin-bottom: 0;
+}
+
+/* Fix Drupal clearfix patch to allow sidebar to float to the left of the page content. */
+.node.clearfix:after {
+	clear: none;
+}
+
+.header {
+	background-color: #FFFFFF;
+}
+
+.region-header .block-menu {
+	background-color: transparent;
+}
+
+.region-header .block-menu ul.menu li:hover ul,
+.region-header .block-menu ul.menu li.hover ul {
+	background-color: #FFFFFF;
+	border: 1px solid #d4d4d4;
+}
+
+.region-header .block-menu ul.menu li:hover ul {
+	top: 52px; /* relative to li: 32 + 20 */
+}
+
+.region-header .block-menu ul.menu li ul li a,
+.region-header .block-menu ul.menu li ul li a:hover {
+	display: block;
+}
+
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu:hover ul {
+	top: 77px; /* relative to header: 25 + 32 + 20 */
+}
+
+/* Region Menu */
+.region-header .block-menu {
+	position: relative;
+}
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu {
+	position: static;
+}
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu:hover ul.menu {
+	display: table;
+}
+
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu {
+	position: absolute;
+	width: 100%; /* Fallback for browser which doesn't support calc */
+	width: calc(100% - 2px); /* 100% of the page -2px for the border */
+}
+
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li {
+	border-right: 1px solid #d4d4d4;
+}
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li.last,
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li ul.menu {
+	border: none;
+}
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li ul.menu {
+	position: static;
+	width: 100%;
+}
+
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li {
+	position: static;
+	display: table-cell;
+	vertical-align: top;
+	width: auto;
+	font-weight: bold;
+	border-left: 1px solid #FFFFFF;
+}
+
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li ul,
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu:hover ul.menu li ul {
+	display: block;
+}
+
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li ul li,
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu:hover ul.menu li ul li {
+	border: 0;
+	display: block;
+	font-weight: normal;
+}
+
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li ul li a::before {
+	content: "•";
+	margin-left: -1.05em; /* Move bullet to the left to make multi-line text look pretty */
+	padding-right: 0.5em; /* Space between the bullet and text */
+	color: #CCCCCC; /* bullet colour */
+}
+
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li ul li a,
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu:hover ul.menu li ul li a {
+	margin-left: 1.5em; /* Space to the left, including space used by the bullet */
+	padding: 0.2em 10px;
+}
+
+
+/* Responsive Menus */
+
+/* Position the menu button */
+.region-header .eatlas-responsive-menu-container {
+    position: static; /* For the accordeon menu */
+	text-align: left;
+}
+
+.region-header .eatlas-responsive-menu-container .eatlas-responsive-menu-button {
+	padding: 0;
+}
+
+.region-header .eatlas-responsive-menu-container ul.accordion-menu {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.region-header .eatlas-responsive-menu-container ul.accordion-menu,
+.region-header .eatlas-responsive-menu-container ul.accordion-menu li.expanded ul li a {
+	background-color: #FFFFFF;
+}
+
+
+/* Menu text colour and active trail */
+.region-header .block-menu ul.menu li a,
+.region-header .block-menu ul.menu li a:hover,
+.region-header .eatlas-responsive-menu-container ul.accordion-menu li a,
+.region-header .eatlas-responsive-menu-container ul.accordion-menu li a:hover {
+	color: #000000;
+}
+
+/* Set background colour, but not on images menu-items */
+.region-header .block-menu ul.menu li a:hover {
+	background-color: #EEEEEE;
+}
+.region-header .block-menu ul.menu li a,
+.region-header .block-menu ul.menu li a:hover {
+	padding: 25px 25px 20px 25px;
+}
+.region-header .block-menu ul.menu li ul li {
+	padding: 0;
+}
+.region-header .block-menu ul.menu li.menu-image-item a,
+.region-header .block-menu ul.menu li.menu-image-item a:hover {
+	height: 32px !important;
+	padding: 25px 25px 20px 25px !important;
+}
+
+.region-header .block-menu ul.menu li.active-trail > a,
+.region-header .eatlas-responsive-menu-container ul.accordion-menu li.active-trail > a {
+	/* Active trail text colour */
+	color: #666666;
+}
+
+
+
+/* Header */
+
+.amps-header {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 1.5em;
+	padding: 0 1em;
+}
+.amps-header a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#main-menus {
+	background-color:transparent;
+}
+
+.region-header .block-menu {
+	width: auto;
+}
+
+
+
+
+/* Make the header look like their website */
+
+.header {
+	border-top: 3px solid #122756; /* Dark blue line on top of the page, to be like their website */
+	display: flex;
+	align-items: center;
+	position: relative; /* Reference for sub-menu elements */
+
+	/* Bottom line between the menu and the site - copied from their website */
+	border-bottom: 1px solid #d4d4d4;
+	box-shadow: 0 2px 6px 0 rgba(80,80,80,0.1);
+	z-index: 1; /* Make the shadow display on top of the map (very subtle detail) */
+}
+
+#main-menus .main-menus-content {
+	width: auto;
+}
+.region-header {
+	margin: 0;
+}
+
+.header .block-search {
+	margin: 0 3em 0 auto;
+}
+
+.eatlas-responsive-menu,
+.block-search,
+.region-header #block-menu-menu-menu-amps {
+	/* Remove position relative to the eatlas-responsive-menu so the sub-menu can use 100% page width */
+	/* Remove position relative to the block-search so the search overlay can use 100% page width */
+	/* Remove position relative to the menu so we can put it on the flex container, so the sub menu can use 100% page width */
+	position: static;
+}
+
+.header .amps-logo {
+	margin: 0 3em;
+}
+.header .amps-logo img {
+	width: 150px;
+}
+
+.block-search .search-block-overlay .search-overlay-content {
+	top: 25px;
+}
+
+
+
+/* Spatial publisher template */
+
+.eatlas_spatial_publisher_map .map_panel .group {
+	border: 1px solid #CCCCCC;
+	margin: 1em 0;
+}
+.eatlas_spatial_publisher_map .map_panel .group h2 {
+	background-color: #DDDDDD;
+	margin: 0;
+	padding: 0.5em;
+}
+.eatlas_spatial_publisher_map .map_panel .group .button-row {
+	background-color: #DDDDDD;
+	border-top: 1px solid #CCCCCC;
+	overflow: auto;
+}
+.eatlas_spatial_publisher_map .map_panel .group .button-row button {
+	display: block;
+	margin: 0.5em auto;
+}
+.eatlas_spatial_publisher_map .map_panel .group .node-block,
+.eatlas_spatial_publisher_map .map_panel .group .description-block {
+	padding: 0.5em;
+	border-bottom: 1px solid #CCCCCC;
+}
+.eatlas_spatial_publisher_map .map_panel .group .node-block.last {
+	border-bottom: none;
+}
+
+
+/* Footer */
+
+#footer {
+	clear: both;
+	background-color: #001E62;
+	color: #FFFFFF;
+	margin: 0 auto;
+}
+
+#footer .region-footer {
+	padding: 12px 50px;
+}
+
+#footer .region-footer .content a {
+	color: #FFFFFF;
+}
+
+
+/**
+ * Share buttons
+ */
+
+.share .share-button {
+	display: inline-block;
+	border-radius: 3px;
+	padding: 3px 4px 3px 22px;
+
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Copied from the official Facebook button */
+.share .facebook-share-button {
+	background: #4267b2 url('/sites/all/themes/eatlases/subthemes/amps/img/facebook.png') no-repeat 2px center;
+	border: 1px solid #4267b2;
+}
+
+.share .facebook-share-button:hover {
+	background-color: #365899;
+	border-color: #365899;
+}
+
+.share .facebook-share-button:focus,
+.share .facebook-share-button:active {
+	background-color: #577fbc;
+	border-color: #577fbc;
+}
+
+/* Mostly the same as the Facebook button for uniformity, with colours and image of Twitter */
+.share .twitter-share-button {
+	background: #1b95e0 url('/sites/all/themes/eatlases/subthemes/amps/img/twitter.svg') no-repeat 2px center;
+	border: 1px solid #1b95e0;
+}
+
+.share .twitter-share-button:hover,
+.share .twitter-share-button:focus,
+.share .twitter-share-button:active {
+	background-color: #0c7abf;
+	border-color: #0c7abf;
+}
+
+
+
+/**
+ * Responsive design
+ */
+
+/* Larger screen */
+#wrapper,
+.page-content_full-width,
+.region-header .pagewidth {
+	width: 1400px;
+}
+
+
+
+#wrapper {
+	padding: 1em 0 0 0;
+}
+
+#footer {
+	margin-bottom: 5em;
+}
+
+.page-content_with-column,
+.page-content_full-width {
+	padding: 0 0 40px 0;
+}
+
+#container {
+	margin: 0 50px 0 50px;
+}
+
+#sidebar-first {
+	width: 200px;
+	font-size: 0.8em;
+}
+
+.page-content_with-column {
+	width: auto; /* Page width - sidebar width and some space between sidebar and page content */
+	float: none;
+	margin-left: 230px; /* Same as the sidebar-first width + 30px spacing */
+}
+
+/* Make media frame images looks more centered - should be set in the eAtlas Media frame module */
+div.mediaframe_wikipedia,
+div.mediaframe_gallery {
+	margin-left: -0.25em;
+}
+
+#species-list .scientific-name {
+	font-size: 0.8em;
+	font-style: italic;
+	color: #999999;
+}
+
+/* Hamburger menu */
+@media screen and (max-width: 1000px) {
+	/* Toggle navigation menus */
+	#main-menus {
+		display: none;
+	}
+	.eatlas-responsive-menu-container {
+		display: block;
+	}
+	.region-header .eatlas-responsive-menu ul.menu {
+		display: none;
+	}
+
+	.region-header .block-menu {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	/* Splash Screen: Reduce text size, reduce margin (top, bottom, etc) and reduce padding. */
+	.block-eatlas-splash-screen .splash-screen {
+		font-size: 0.7em;
+		padding: 1em;
+		top: 5%;
+		bottom: 5%;
+		right: 5%;
+		left: 5%;
+	}
+
+	/* Reduce the padding (50%) around the page content bellow the map */
+	.eatlas_spatial_publisher_map .map_panel .content {
+		padding: 1em;
+	}
+
+	/* Remove the sidebar-first (the 2nd level menu) */
+	#sidebar-first {
+		display: none;
+	}
+	.page-content_with-column {
+		margin-left: 0;
+	}
+
+	/* Fix the search form, on the search page */
+	.search-results {
+		padding: 0;
+	}
+
+	/* Make the margin reduce as the page get smaller */
+	#footer {
+		margin-bottom: 0;
+	}
+	#container {
+		margin: 0 5%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.header .amps-logo {
+		margin: 0 1em;
+	}
+}
+
+
+
+/**
+ * Override mapping client styles for feature requests
+ */
+.eatlas-map-client-map .aims-map-row-panel.bottom .aims-section-header {
+	display: none;
+}
+
+.eatlas-map-client-map .aims-map-row-panel.bottom .aims-section-content .aims-map-get-feature-info-title {
+	display: none;
+}
+
+.eatlas-map-client-map .aims-map-row-panel.bottom .aims-section-content .aims-map-get-features div.aims-map-get-features-container {
+	border-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.eatlas-map-client-map .aims-map-row-panel.bottom .aims-section-content .aims-map-get-features div.aims-map-get-features-container h1 {
+	font-size: 24px;
+}
+
+@media (max-width: 768px) {
+	.eatlas-map-client-map .aims-map-ui-container .aims-map-ui-row-container .aims-map-row-panel {
+		flex-wrap: nowrap;
+	}
+
+	.eatlas-map-client-map .aims-map-ui-container .aims-map-ui-row-container .aims-map-row-panel .aims-section-content {
+		width: auto;
+		order: 1;
+	}
+
+	.eatlas-map-client-map .aims-map-ui-container .aims-map-ui-row-container .aims-map-row-panel .aims-actions {
+		background: inherit;
+	}
+}

@@ -1,0 +1,213 @@
+
+fieldset {
+	width: auto;
+	border: 1px solid #CCC;
+}
+
+.field-group-fieldset {
+	margin-top: 1em;
+}
+
+select {
+	background-color: #FFFFFF;
+	max-width: 100%;
+}
+
+div.vertical-tabs ul li.vertical-tab-button {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+}
+
+li.vertical-tab-button .summary {
+	color: #666;
+	font-size: 0.8em;
+}
+
+/* Fancy submit buttons - Inspired on Seven theme */
+input.form-submit {
+	cursor: pointer;
+	padding: 4px 17px;
+	margin: 0 1em 0 0;
+	color: #5A5A5A;
+	text-align: center;
+	font-weight: normal;
+	font-size: 1em;
+	border: 1px solid #E4E4E4;
+	border-bottom-color: #B4B4B4;
+	border-left-color: #D2D2D2;
+	border-right-color: #D2D2D2;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background-color: #EEEEEE;
+}
+
+input.form-submit:hover {
+	border-top-color: #B4B4B4;
+	border-bottom-color: #E4E4E4;
+	background-color: #E2E2E2;
+}
+
+/* Fields with more that one entry */
+form .wysiwyg-toggle-wrapper {
+	margin: 0.2em 0 -2.1em 0.5em;
+	font-size: 0.8em;
+}
+
+/* Change the font size of the "Show row weights" link. */
+form .tabledrag-toggle-weight {
+	font-size: 0.8em;
+}
+
+/* Preview image (media-widget) has too much space bellow the label. */
+form .field-widget-media-generic .form-item {
+	margin: 0;
+}
+
+/* Row 100% of the page; otherwise it looks silly */
+form .tabledrag-processed {
+	width: 100%;
+	margin-bottom: 0.5em;
+}
+
+/* Row odd / even are the same color. What's the point of cycling through? */
+tr.odd  { background-color: #EEEEEE; }
+tr.even { background-color: #F5F5F5; }
+
+/* The warning "*" (that appear when the row order changes), is displayed on its own row, breaking the template. */
+/* Fixing this by position it with a position absolute, relative to its cell. */
+/* NOTE: Firefox do not support "position: relative" on a table cell, unless it's display block. */
+/* NOTE: first-child is used here to only affect the first cell of the row. */
+form .tabledrag-processed tr td:first-child {
+	padding-left: 0.8em;
+	position: relative;
+	display: block;
+}
+/* Solve a side-effect of having a table cell display block (the cell width are unstable unless we force them to take as much space as possible) */
+form .tabledrag-processed td {
+	width: 100%;
+}
+
+/* Position the warning "*" relative to its table cell. */
+form .tabledrag-processed .warning {
+	position: absolute;
+	top: 0;
+	left: 0.2em;
+}
+/* Remove padding on rows (padding on a row is invalid) */
+form .tabledrag-processed tr {
+	padding: 0;
+}
+
+/* Remove unwanted space around the drag handle */
+form .tabledrag-processed a.tabledrag-handle {
+	padding: 0;
+	margin: 0;
+	height: 25px; /* Some browsers has problem to calculate the height of this element. */
+}
+
+/* Correction of the handle position. */
+/* It's a bad idea to add padding to an element that has a background-image: the image is visible in the padding, messing the position. */
+/* Solution: Set a margin instead of a padding, than the background position become independent of its spacing. */
+form .tabledrag-processed a.tabledrag-handle .handle {
+	margin: 0.42em 0.3em 0 0.2em;
+	padding: 0;
+	background-position: 0 0;
+}
+form .tabledrag-processed a.tabledrag-handle-hover .handle {
+	background-position: 0 -20px;
+}
+
+/* Lower the file icon to align it with the text and center it in the middle of the row */
+form .tabledrag-processed .file-widget .file-icon {
+	margin: 0 0 -0.2em 0;
+}
+
+#autocomplete {
+	background-color: #FFFFFF;
+}
+#autocomplete ul {
+	margin: 0;
+}
+#autocomplete ul li {
+	margin: 0 0.2em;
+}
+
+/**
+ * Fix the admin page viewed in the eAtlases theme
+ * (for the editor, not using the Seven theme)
+ * It's especially useful for the Media Browser Plus (unusable asis)
+ */
+
+.page-admin-content h1 {
+	/* I don't understand why there is a big "Title" in that page... It's ugly and useless so I just hide it. */
+	/* See: admin/content/media */
+	display: none;
+}
+.page-admin-content ul.action-links {
+	margin: 1em 0;
+	padding: 0 20px 0 20px;
+	overflow: hidden;
+}
+.page-admin-content ul.action-links li {
+	float: left; /* LTR */
+	margin: 0 2em;
+}
+
+.page-admin-content table {
+	width: 100%;
+	margin: 0 0 10px 0;
+	border: 1px solid #bebfb9;
+	font: normal 81.3%/1.538em "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+.page-admin-content table th {
+	text-transform: uppercase;
+	background: #e1e2dc;
+	font-weight: normal;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #bebfb9;
+	padding: 3px 10px;
+}
+
+.page-admin-content table td {
+	padding: 8px 10px;
+	border: 0;
+}
+
+.page-admin-content table tr.odd {
+	background: #ffffff;
+}
+.page-admin-content table tr.even {
+	background: #f3f4ee;;
+}
+
+/**
+ * "page-views" and "page-recent-activity" are used for "My content", "Unpublished content", "All content", etc.
+ * I couldn't find proper CSS for those on the Seven theme so I made my own.
+ */
+.page-recent-activity table,
+.page-views table {
+	font: normal 85%/1.6em "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+.page-recent-activity table th,
+.page-views table th {
+	padding: 3px 10px;
+}
+.page-recent-activity table td,
+.page-views table td {
+	padding: 8px 10px;
+}
+/* Do not display the [edit] link in the title, when displayed within a view (there is a "edit" column for that) */
+.page-recent-activity .views-field-title .edit-link,
+.page-views .views-field-title .edit-link {
+	display: none;
+}
+
+/* This class is used on some views column (usually the title) */
+.column-width-500 {
+	width: 500px;
+}
+

@@ -1,0 +1,34 @@
+HOWTO Create the published background, using "Gimp"
+	(File: published.xcf)
+
+1. Write text:
+	Font: Sans Bold
+	Size: 75px
+	Color: #000000 (Black)
+
+2. Rotate text:
+	Select the text layer(s)
+	Layer > Transform > Arbitrary Rotation...
+		Angle: -15
+
+3. Create the text outline
+	Create a new layer (refered as "Outline"
+	Right-click the text layer > Alpha to Selection
+	Select the new empty Outline layer
+	Select > Grow...
+		2 pixels
+	Edit > Fill with FG Color (assuming your foreground color is the default black)
+	Right-click the text layer > Alpha to Selection
+	Select the Outline layer
+	Select > Shrink...
+		2 pixels
+	Backspace (to clear the content of the selection within the Outline layer, creating the outline effect)
+
+4. Position the text so it do not overlap with others
+	Those background may be used toggether.
+
+5. Save the layers as PNG
+	Make only one "Outline" layer visible (no background, we want the PNG to be transparent)
+	Opacity: 10%
+	File > Save as
+		PNG image (*.png)

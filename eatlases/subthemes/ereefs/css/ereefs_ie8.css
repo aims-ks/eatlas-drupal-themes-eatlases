@@ -1,0 +1,28 @@
+/* IE8 computer are likely to have small screen, and they can't have responsive design */
+#wrapper,
+.ereefs-header,
+.region-header .pagewidth,
+#main-menus .main-menus-content,
+.region-header .block-menu {
+	width: 1000px;
+}
+
+.page-content_full-width {
+	width: 900px; /* pagewidth - 50px padding left and right (x2) */
+}
+
+/* The video is too large for the front page. */
+.ereefs-video iframe {
+	width: 800px;
+	height: 450px;
+}
+
+/* IE8 do not like "max-width: 100%" */
+iframe,
+table,
+input,
+div,
+img,
+p {
+	max-width: none !important;
+}

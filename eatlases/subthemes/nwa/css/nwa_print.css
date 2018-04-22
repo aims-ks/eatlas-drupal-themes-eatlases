@@ -1,0 +1,25 @@
+#block-views-north-west-atlas-blog-block .views-row {
+	width: auto;
+}
+
+#block-views-north-west-atlas-blog-block .views-row-odd,
+#block-views-north-west-atlas-blog-block .views-row-even {
+	float: none;
+}
+
+#block-eatlas-image-slider-eatlas-image-slider-3,
+#block-block-32 {
+	float: none;
+	margin: 0 auto;
+}
+
+.header {
+	background: none;
+}
+
+#footer {
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	width: auto;
+}
