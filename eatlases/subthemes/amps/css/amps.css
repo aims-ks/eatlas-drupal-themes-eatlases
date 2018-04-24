@@ -2,7 +2,7 @@
  * This stylesheet is loaded in the eReefs header block.
  */
 body {
-	background-color: #000000;
+	background-color: #FFFFFF;
 	font-family: "Muli", "Hoefler Text", Georgia, serif;
 }
 
@@ -287,6 +287,10 @@ body {
  * Share buttons
  */
 
+.share {
+	line-height: 1em;
+}
+
 .share .share-button {
 	display: inline-block;
 	border-radius: 3px;
@@ -445,7 +449,6 @@ div.mediaframe_gallery {
 		margin: 0 1em;
 	}
 }
-
 
 
 /**

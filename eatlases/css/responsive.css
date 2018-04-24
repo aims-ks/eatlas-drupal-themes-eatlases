@@ -29,6 +29,10 @@ body .flexslider img {
 	max-width: 100% !important;
 }
 
+body .mediaframe_tile .image * {
+	max-width: none !important;
+}
+
 /* Node edition form - do not make the bottom section "max-width: 100%";
  * it breaks the design when the page is small. */
 #block-system-main .vertical-tabs ul {
