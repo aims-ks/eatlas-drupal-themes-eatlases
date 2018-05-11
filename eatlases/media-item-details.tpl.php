@@ -38,7 +38,8 @@
 				if ($previewValues) {
 					$preview = file_load($previewValues[0]['fid']);
 				}
-				print render(file_view_file($preview, 'm_very_large'));
+				$file_view = file_view_file($preview, 'm_very_large');
+				print render($file_view);
 			?>
 		</div>
 
