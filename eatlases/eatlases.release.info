@@ -9,5 +9,4 @@ creator = Gael Lafond
 ;   This variable is an array, one cell per element. Use "\n" for new lines.
 ;   Those properties are used with release_notes and tags.
 ;   See: https://www.drupal.org/documentation/releases/types
-Bug fixes[] = Fixed AMPS background colour (it has been mysteriously changed to black).
-New features[] = Added max-width exception for "mediaframe_tile"
+Bug fixes[] = Removed the "important" keyword on CSS property "max-width" to allow overwrite when needed.

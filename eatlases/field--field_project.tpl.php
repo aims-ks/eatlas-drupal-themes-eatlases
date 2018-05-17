@@ -26,7 +26,8 @@
 									array(
 										'showMetadata' => false,
 										'styleName' => 'm_icon',
-										'media_style' => 'wikipedia'
+										'media_style' => 'wikipedia',
+										'media_link' => 'none'
 									),
 									url($link),
 									NULL,

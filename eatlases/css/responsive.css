@@ -7,36 +7,36 @@
  *   (IE 8), those styles will also affect CKEditor and the menu.
  */
 body:not(.cke_editable) * {
-	max-width: 100% !important;
+	max-width: 100%;
 }
 
 body .contextual-links-wrapper * {
-	max-width: none !important;
+	max-width: none;
 }
 
 body .leaflet-container * {
-	max-width: none !important;
+	max-width: none;
 }
 
 .region-header ul.menu {
-	max-width: none !important;
+	max-width: none;
 }
 
 body .flexslider * {
-	max-width: none !important;
+	max-width: none;
 }
 body .flexslider img {
-	max-width: 100% !important;
+	max-width: 100%;
 }
 
 body .mediaframe_tile .image * {
-	max-width: none !important;
+	max-width: none;
 }
 
 /* Node edition form - do not make the bottom section "max-width: 100%";
  * it breaks the design when the page is small. */
 #block-system-main .vertical-tabs ul {
-	max-width: none !important;
+	max-width: none;
 }
 
 /* Keep image aspect ratio (it works because the image resize module change the image natural dimensions) */

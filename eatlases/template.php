@@ -51,29 +51,22 @@ function eatlases_menu_link($variables) {
 		}
 	}
 
-	// Do not render the link on menu items that has childrens
+	// Do not render the link on parent menu items that leads to the 404 page.
 	// Original:
 	//     File: www/includes/menu.inc
 	//     Function: theme_menu_link
 	//     Line: 1625
 	$element = $variables['element'];
+	$href_alias = drupal_get_path_alias($element['#href']);
 
-	$menu_name = $element['#original_link']['menu_name'];
-	$is_header_menu = $menu_name === 'main-menu' || strpos($menu_name, 'menu-branding-menu-') === 0;
-	if (!$is_header_menu) {
-		return theme_menu_link($variables);
-	}
-
-	$sub_menu = '';
-	if ($element['#below']) {
-		// Disable sub-menu links for mobile devices
+	if ($element['#below'] && $href_alias === '404') {
 		$sub_menu = drupal_render($element['#below']);
 		// Add a useless "a" tag, for more consistancy (works better with existing CSS)
-		$output = '<a href="#">' . $element['#title'] . '</a>';
+		$output = '<a>' . $element['#title'] . '</a>';
+		return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 	} else {
-		$output = l($element['#title'], $element['#href'], $element['#localized_options']);
+		return theme_menu_link($variables);
 	}
-	return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
 
 /**
