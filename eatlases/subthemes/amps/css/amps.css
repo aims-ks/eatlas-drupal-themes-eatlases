@@ -6,6 +6,26 @@ body {
 	font-family: "Muli", "Hoefler Text", Georgia, serif;
 }
 
+body, .region-header .block-menu .content {
+    font-size: 18px;
+}
+
+/**
+ * Prevent SUP (exponent) and SUB (subscript)
+ * increasing the line-height.
+ **/
+sup, sub {
+	vertical-align: baseline;
+	position: relative;
+}
+sup { 
+	top: -0.5em;
+}
+sub { 
+	top: 0.4em; 
+}
+
+
 #wrapper {
 	overflow: visible;
 	color: #113a5f;
@@ -239,7 +259,7 @@ body {
 
 .eatlas_spatial_publisher_map .map_panel .group {
 	border: 1px solid #CCCCCC;
-	margin: 1em 0;
+	margin: 2em 0;
 }
 .eatlas_spatial_publisher_map .map_panel .group h2 {
 	background-color: #DDDDDD;
@@ -276,6 +296,8 @@ body {
 
 #footer .region-footer {
 	padding: 12px 50px;
+	display: flex;
+	justify-content: flex-end;
 }
 
 #footer .region-footer .content a {
@@ -342,18 +364,15 @@ body {
 /* Larger screen */
 #wrapper,
 .page-content_full-width,
-.region-header .pagewidth {
-	width: 1400px;
+.pagewidth {
+	width: 900px;
 }
-
-
+.field-name-body .pagewidth {
+	margin: 0 auto;
+}
 
 #wrapper {
 	padding: 1em 0 0 0;
-}
-
-#footer {
-	margin-bottom: 5em;
 }
 
 .page-content_with-column,
@@ -388,8 +407,29 @@ div.mediaframe_gallery {
 	color: #999999;
 }
 
+/**
+ * Override mapping client styles for feature requests
+ */
+.eatlas-map-client-map .aims-map-row-panel.bottom .aims-section-header {
+	display: none;
+}
+
+.eatlas-map-client-map .aims-map-row-panel.bottom .aims-section-content .aims-map-get-feature-info-title {
+	display: none;
+}
+
+.eatlas-map-client-map .aims-map-row-panel.bottom .aims-section-content .aims-map-get-features div.aims-map-get-features-container {
+	border-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.eatlas-map-client-map .aims-map-row-panel.bottom .aims-section-content .aims-map-get-features div.aims-map-get-features-container h1 {
+	font-size: 24px;
+}
+
 /* Hamburger menu */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
 	/* Toggle navigation menus */
 	#main-menus {
 		display: none;
@@ -407,6 +447,12 @@ div.mediaframe_gallery {
 }
 
 @media screen and (max-width: 800px) {
+	/* Reduce font size */
+	body, .region-header .block-menu .content {
+		font-size: 17px;
+	}
+
+
 	/* Splash Screen: Reduce text size, reduce margin (top, bottom, etc) and reduce padding. */
 	.block-eatlas-splash-screen .splash-screen {
 		font-size: 0.7em;
@@ -444,32 +490,24 @@ div.mediaframe_gallery {
 	}
 }
 
-@media screen and (max-width: 400px) {
-	.header .amps-logo {
-		margin: 0 1em;
+
+@media screen and (max-width: 600px) {
+	/* Reduce font size */
+	body, .region-header .block-menu .content {
+		font-size: 16px;
 	}
 }
 
 
-/**
- * Override mapping client styles for feature requests
- */
-.eatlas-map-client-map .aims-map-row-panel.bottom .aims-section-header {
-	display: none;
-}
+@media screen and (max-width: 400px) {
+	/* Reduce font size */
+	body, .region-header .block-menu .content {
+		font-size: 15px;
+	}
 
-.eatlas-map-client-map .aims-map-row-panel.bottom .aims-section-content .aims-map-get-feature-info-title {
-	display: none;
-}
-
-.eatlas-map-client-map .aims-map-row-panel.bottom .aims-section-content .aims-map-get-features div.aims-map-get-features-container {
-	border-bottom: 0;
-	margin-bottom: 0;
-	padding-bottom: 0;
-}
-
-.eatlas-map-client-map .aims-map-row-panel.bottom .aims-section-content .aims-map-get-features div.aims-map-get-features-container h1 {
-	font-size: 24px;
+	.header .amps-logo {
+		margin: 0 1em;
+	}
 }
 
 @media (max-width: 768px) {
