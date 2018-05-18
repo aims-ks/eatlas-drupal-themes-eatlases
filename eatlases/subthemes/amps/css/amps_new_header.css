@@ -203,26 +203,42 @@
 	background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
 
 	/* Font-size is dynamic, relative to width - fixed when the page is small (see bellow) */
-	font-size: 5vw;
-
+	font-size: 1.2rem;
 	/* Remove margin because the gradient is not included in the margin */
 	margin: 0;
 
 	/* Add some padding to create a prettier gradient behind the title, and prevent the title from touching the edge of the header div */
-	padding: 1em 0.5em 0.5em 0.5em;
+	padding: 1em 0.5em 2.1rem 0.5em;
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
 	.amps-header-image {
 		/* Header div shrink when page get small */
 		min-height: 30vw;
 	}
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 640px) {
+  .amps-header-image .amps-header-title .page-title {
+    /* Fixed title font size when page is large */
+    font-size: 1.7rem;
+    padding-bottom: 2.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .amps-header-image .amps-header-title .page-title {
+    /* Fixed title font size when page is large */
+    font-size: 2.4rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
 	.amps-header-image .amps-header-title .page-title {
 		/* Fixed title font size when page is large */
-		font-size: 3em;
+    font-size: 3rem;
+    padding-bottom: 3.5rem;
 	}
 }

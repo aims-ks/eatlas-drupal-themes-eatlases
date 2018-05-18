@@ -37,5 +37,5 @@ regions[page_bottom] = Page bottom
 ; Attributes used by the update module.
 ; There fields needs to be removed if the module is migrated to Drupal.org
 project status url = "http://drupal.eatlas.org.au/themes"
-version = "7.x-2.41"
+version = "7.x-2.42"
 project = "eatlases"
