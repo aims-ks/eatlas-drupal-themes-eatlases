@@ -18,11 +18,11 @@ sup, sub {
 	vertical-align: baseline;
 	position: relative;
 }
-sup { 
+sup {
 	top: -0.5em;
 }
-sub { 
-	top: 0.4em; 
+sub {
+	top: 0.4em;
 }
 
 
@@ -48,7 +48,6 @@ sub {
 .region-header .block-menu ul.menu li:hover ul,
 .region-header .block-menu ul.menu li.hover ul {
 	background-color: #FFFFFF;
-	border: 1px solid #d4d4d4;
 }
 
 .region-header .block-menu ul.menu li:hover ul {
@@ -81,13 +80,6 @@ sub {
 	width: calc(100% - 2px); /* 100% of the page -2px for the border */
 }
 
-.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li {
-	border-right: 1px solid #d4d4d4;
-}
-.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li.last,
-.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li ul.menu {
-	border: none;
-}
 .region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li ul.menu {
 	position: static;
 	width: 100%;
@@ -99,7 +91,6 @@ sub {
 	vertical-align: top;
 	width: auto;
 	font-weight: bold;
-	border-left: 1px solid #FFFFFF;
 }
 
 .region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li ul,
