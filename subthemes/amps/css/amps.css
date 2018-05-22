@@ -213,6 +213,12 @@ sub {
 	z-index: 1; /* Make the shadow display on top of the map (very subtle detail) */
 }
 
+.breadcrumbs {
+  font-size: 0.7em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
 #main-menus .main-menus-content {
 	width: auto;
 }
