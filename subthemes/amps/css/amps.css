@@ -281,6 +281,10 @@ sub {
 	border-bottom: none;
 }
 
+.eatlas_spatial_publisher_map .map_panel .content .panel-header h1.title {
+  font-size: 1.8em;
+  margin-top: 0;
+}
 
 /* Footer */
 
