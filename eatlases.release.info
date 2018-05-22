@@ -9,5 +9,4 @@ creator = Gael Lafond
 ;   This variable is an array, one cell per element. Use "\n" for new lines.
 ;   Those properties are used with release_notes and tags.
 ;   See: https://www.drupal.org/documentation/releases/types
-Bug fixes[] = Fix external links opening in a new tab.
-Bug fixes[] = Re-added the border around the menu (I believe Park Australia asked to only remove lines between regions in the region menu).
+New features[] = AMPS Adjust header image sizes on article pages

@@ -34,7 +34,7 @@ if (isset($node)) {
 
 // Determine the markup of the header div
 // Default markup
-$header_image_div_style = NULL;
+$header_image_url = NULL;
 if (isset($node) && $node) {
 	// Do not mess with the preview image when it's not the preview image for the current node.
 	// I.E. Do not touch it if the node is display in a list or an image slider for example.
@@ -54,9 +54,9 @@ if (isset($node) && $node) {
 			case 'preview':
 				$preview_field = field_get_items('node', $node, 'field_preview');
 				if ($preview_field && isset($preview_field[0]) && isset($preview_field[0]['fid'])) {
-					$preview_url = _cmr_theme_get_image_url($preview_field[0]['fid']);
+					$preview_url = _cmr_theme_get_image_url($preview_field[0]['fid'], 'amps_header_image');
 					if ($preview_url) {
-						$header_image_div_style = 'background-image: url(\'' . check_plain($preview_url) . '\')';
+						$header_image_url = check_plain($preview_url);
 					}
 				}
 				break;
@@ -64,9 +64,9 @@ if (isset($node) && $node) {
 			case 'custom':
 				$custom_field = field_get_items('node', $node, 'field_header_image');
 				if ($custom_field && isset($custom_field[0]) && isset($custom_field[0]['fid'])) {
-					$custom_url = _cmr_theme_get_image_url($custom_field[0]['fid']);
+					$custom_url = _cmr_theme_get_image_url($custom_field[0]['fid'], 'amps_header_image');
 					if ($custom_url) {
-						$header_image_div_style = 'background-image: url(\'' . check_plain($custom_url) . '\')';
+						$header_image_url = check_plain($custom_url);
 					}
 				}
 				break;
@@ -130,16 +130,21 @@ if (isset($page['content']['system_main']['nodes'][arg(1)])) {
 				print render($_searchForm);
 			?>
 		</div>
-		<?php if ($header_image_div_style): ?>
-			<div class="amps-header-image" style="<?php print $header_image_div_style; ?>">
-				<div class="amps-header-title">
-					<?php if ($title): ?>
-						<?php print render($title_prefix); ?>
-						<h1 class="page-title"><?php print $title ?></h1>
-						<?php print render($title_suffix); ?>
-						<?php $title = FALSE; ?>
-					<?php endif; ?>
-				</div>
+		<?php if ($header_image_url): ?>
+			<div class="amps-header-image-wrapper">
+        <div class="amps-header-image-inner-wrapper">
+          <div class="amps-header-image">
+            <img src="<?php print $header_image_url; ?>" />
+          </div>
+          <div class="amps-header-title">
+            <?php if ($title): ?>
+              <?php print render($title_prefix); ?>
+              <h1 class="page-title"><?php print $title ?></h1>
+              <?php print render($title_suffix); ?>
+              <?php $title = FALSE; ?>
+            <?php endif; ?>
+          </div>
+        </div>
 			</div>
 		<?php endif; ?>
 	</header>
