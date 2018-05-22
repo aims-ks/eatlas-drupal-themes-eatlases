@@ -83,17 +83,25 @@ h1, h2, h3, h4, h5, h6 {
 	width: calc(100% - 2px); /* 100% of the page -2px for the border */
 }
 
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu > ul.menu {
+  padding-bottom: 7px;
+}
+
 .region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li ul.menu {
 	position: static;
 	width: 100%;
 }
 
 .region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li {
-	position: static;
-	display: table-cell;
-	vertical-align: top;
-	width: auto;
-	font-weight: bold;
+  position: static;
+  display: table-cell;
+  vertical-align: top;
+  width: auto;
+  font-weight: bold;
+}
+
+.region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu > ul.menu > li > a {
+  color: #122756;
 }
 
 .region-header .block-menu ul.menu li.eAtlas_spatial_publisher_menu ul.menu li ul,
