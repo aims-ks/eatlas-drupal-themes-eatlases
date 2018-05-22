@@ -78,6 +78,11 @@ p + h3 {
 	background-color: #FFFFFF;
 }
 
+/* Add a border around the first sub-menu of the navigation menu */
+.region-header .block-menu div.content > ul.menu > li > ul {
+	border: 1px solid #d4d4d4;
+}
+
 .region-header .block-menu ul.menu li:hover ul {
 	top: 52px; /* relative to li: 32 + 20 */
 }
