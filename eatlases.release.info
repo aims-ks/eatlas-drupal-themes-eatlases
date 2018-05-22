@@ -11,3 +11,4 @@ creator = Gael Lafond
 ;   See: https://www.drupal.org/documentation/releases/types
 New features[] = AMPS Change font size and margin for breadcrumbs
 New features[] = AMPS Reduce headline size for h1 in map panel
+New features[] = AMPS Use blue for headlines
