@@ -30,14 +30,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a, a:link, a:visited {
-  color:#122756;
-  text-decoration:underline;
-  -webkit-transition:color 150ms ease-in-out;
-  transition:color 150ms ease-in-out;
-  font-weight: normal;
+  color: #122756;
+  text-decoration: underline;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
 }
 a:hover,a:focus {
-  color:#0a1734
+  color: #0a1734;
 }
 a,button {
   -webkit-tap-highlight-color:transparent
@@ -47,6 +46,12 @@ button:focus,a:focus {
 }
 button:hover,a:hover,button:active,a:active {
   outline:none
+}
+
+p + h1,
+p + h2,
+p + h3 {
+  margin-top: 1.5em;
 }
 
 #wrapper {
