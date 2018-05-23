@@ -336,7 +336,7 @@ p + h3 {
   margin-top: 0;
 }
 
-.eatlas_spatial_publisher_map .map_panel .content .node-block .node-title a{
+.eatlas_spatial_publisher_map .map_panel .content .node-block .node-title a {
   text-decoration: none;
 }
 
@@ -523,6 +523,10 @@ div.mediaframe_gallery {
 		padding: 1em;
 	}
 
+  .eatlas_spatial_publisher_map .map_panel .content .panel-header h1.title {
+    font-size: 1.5em;
+  }
+
 	/* Remove the sidebar-first (the 2nd level menu) */
 	#sidebar-first {
 		display: none;
@@ -551,6 +555,10 @@ div.mediaframe_gallery {
 	body, .region-header .block-menu .content {
 		font-size: 16px;
 	}
+
+  .eatlas_spatial_publisher_map .map_panel .content .panel-header h1.title {
+    font-size: 1.2em;
+  }
 }
 
 
