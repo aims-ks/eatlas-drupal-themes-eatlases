@@ -454,12 +454,6 @@ p + h3 {
 	margin-left: 230px; /* Same as the sidebar-first width + 30px spacing */
 }
 
-/* Make media frame images looks more centered - should be set in the eAtlas Media frame module */
-div.mediaframe_wikipedia,
-div.mediaframe_gallery {
-	margin-left: -0.25em;
-}
-
 #species-list .scientific-name {
 	font-size: 0.8em;
 	font-style: italic;
