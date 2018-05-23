@@ -340,6 +340,10 @@ p + h3 {
   text-decoration: none;
 }
 
+.eatlas_spatial_publisher_map .flexslider-wrapper .flexslider-image {
+  max-height: 576px;
+}
+
 /* Footer */
 
 #footer {
