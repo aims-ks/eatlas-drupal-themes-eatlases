@@ -461,8 +461,16 @@ p + h3 {
 }
 
 /**
- * Override mapping client styles for feature requests
+ * Override mapping client styles
  */
+.eatlas-map-client-map {
+  box-shadow: 0 8px 8px -8px #666666;
+}
+
+.eatlas-map-client-map .aims-map-ui-container .aims-map-ui-row-container .aims-map-row-panel {
+  max-width: 600px;
+}
+
 .eatlas-map-client-map .aims-map-row-panel.bottom .aims-section-header {
 	display: none;
 }

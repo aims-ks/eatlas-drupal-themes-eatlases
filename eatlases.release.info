@@ -10,3 +10,5 @@ creator = Gael Lafond
 ;   Those properties are used with release_notes and tags.
 ;   See: https://www.drupal.org/documentation/releases/types
 Bug fixes[] = Remove CSS hack.
+New features[] = AMPS Reduce width of info popup
+New features[] = AMPS Add box shadow add bottom of mapping client
