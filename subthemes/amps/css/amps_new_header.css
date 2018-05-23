@@ -186,6 +186,7 @@ div.amps-header-image-wrapper {
 div.amps-header-image-wrapper div.amps-header-image-inner-wrapper {
   position: relative;
   max-width: 192rem;
+  max-height: 35rem;
   margin: 0 auto;
 }
 
