@@ -263,8 +263,8 @@ ol.breadcrumb li.last:after {
 
 #main-menus ul.menu li a,
 #main-menus ul.menu li a:hover,
-#main-menus ul.accordion-menu li a,
-#main-menus ul.accordion-menu li a:hover,
+ul.accordion-menu li a,
+ul.accordion-menu li a:hover,
 .region-header .block-menu ul.menu li a,
 .region-header .block-menu ul.menu li a:hover {
 	display: inline-block;
