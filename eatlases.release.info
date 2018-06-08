@@ -11,6 +11,7 @@ creator = Gael Lafond
 ;   See: https://www.drupal.org/documentation/releases/types
 New features[] = AMPS Reduce width of info popup
 New features[] = AMPS Add box shadow at bottom of mapping client
+New features[] = AMPS Add gray background for banner images
 Bug fixes[] = Remove underline from links in accordian menu
 Bug fixes[] = AMPS Add bottom border to accordian menu
 Bug fixes[] = AMPS Make mud maps 100% wide for small screens

@@ -181,6 +181,7 @@ div.amps-header-image-wrapper {
   width: 100%;
   max-height: 35rem;
   overflow: hidden;
+  background-color: #333333;
 }
 
 div.amps-header-image-wrapper div.amps-header-image-inner-wrapper {
