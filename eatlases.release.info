@@ -9,6 +9,7 @@ creator = Gael Lafond
 ;   This variable is an array, one cell per element. Use "\n" for new lines.
 ;   Those properties are used with release_notes and tags.
 ;   See: https://www.drupal.org/documentation/releases/types
-Bug fixes[] = Remove CSS hack.
 New features[] = AMPS Reduce width of info popup
-New features[] = AMPS Add box shadow add bottom of mapping client
+New features[] = AMPS Add box shadow at bottom of mapping client
+Bug fixes[] = Remove underline from links in accordian menu
+Bug fixes[] = AMPS Add bottom border to accordian menu

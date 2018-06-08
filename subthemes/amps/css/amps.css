@@ -176,6 +176,9 @@ p + h3 {
 	position: absolute;
 	left: 0;
 	right: 0;
+  top: 55px; /* relative to header */
+  border-bottom: 1px solid #d4d4d4;
+  box-shadow: 0 2px 6px 0 rgba(80,80,80,0.1);
 }
 .region-header .eatlas-responsive-menu-container ul.accordion-menu,
 .region-header .eatlas-responsive-menu-container ul.accordion-menu li.expanded ul li a {
