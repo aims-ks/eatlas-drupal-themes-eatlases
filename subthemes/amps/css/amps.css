@@ -568,6 +568,15 @@ p + h3 {
   .eatlas_spatial_publisher_map .map_panel .content .panel-header h1.title {
     font-size: 1.2em;
   }
+
+  .field-name-field-overview-map {
+    width: 100%;
+    text-align: center;
+  }
+
+  .field-name-field-overview-map img {
+    max-width: 300px;
+  }
 }
 
 

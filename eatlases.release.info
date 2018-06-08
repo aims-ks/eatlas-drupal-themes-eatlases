@@ -13,3 +13,4 @@ New features[] = AMPS Reduce width of info popup
 New features[] = AMPS Add box shadow at bottom of mapping client
 Bug fixes[] = Remove underline from links in accordian menu
 Bug fixes[] = AMPS Add bottom border to accordian menu
+Bug fixes[] = AMPS Make mud maps 100% wide for small screens
