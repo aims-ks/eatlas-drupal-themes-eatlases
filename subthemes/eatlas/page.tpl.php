@@ -16,7 +16,8 @@ if (isset($node)) {
 			case 'organisation_section':
 				$organisationNameValues = field_get_items('node', $node, 'field_name');
 				if ($organisationNameValues) {
-					$organisationName = render(field_view_value('node', $node, 'field_name', $organisationNameValues[0]));
+				  $value = field_view_value('node', $node, 'field_name', $organisationNameValues[0]);
+					$organisationName = render($value);
 					if ($organisationName) {
 						// Set the page title (visible on the browser window title bar)
 						// This function can also be used to change the breadcrumb, but it's too late for that. It has already been printed.
