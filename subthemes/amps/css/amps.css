@@ -295,6 +295,11 @@ p + h3 {
 }
 .header .amps-home img {
 	width: 25px;
+	opacity: 0.2;
+	transition: opacity 0.2s;
+}
+.header .amps-home img:hover {
+	opacity: 1;
 }
 
 .block-search .search-block-overlay .search-overlay-content {
