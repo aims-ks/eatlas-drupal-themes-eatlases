@@ -123,6 +123,7 @@ if (isset($page['content']['system_main']['nodes'][arg(1)])) {
 			?>
 
 			<div class="amps-logo"><a href="/amps"><img src="/<?php print $theme_path; ?>/img/logo-marine-parks.svg" /></a></div>
+			<div class="amps-home"><a href="/amps"><img src="/<?php print $theme_path; ?>/img/home-icon.svg" /></a></div>
 
 			<?php
 				print render($page['header']);

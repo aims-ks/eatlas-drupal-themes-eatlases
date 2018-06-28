@@ -290,6 +290,13 @@ p + h3 {
 	width: 150px;
 }
 
+.header .amps-home {
+	margin: 0 1em;
+}
+.header .amps-home img {
+	width: 25px;
+}
+
 .block-search .search-block-overlay .search-overlay-content {
 	top: 25px;
 }
