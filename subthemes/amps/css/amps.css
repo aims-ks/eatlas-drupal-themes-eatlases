@@ -499,6 +499,7 @@ p + h3 {
 	font-size: 24px;
 }
 
+
 /* Hamburger menu */
 @media screen and (max-width: 1200px) {
 	/* Toggle navigation menus */
@@ -517,7 +518,8 @@ p + h3 {
 	}
 }
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 768px) {
 	/* Reduce font size */
 	body, .region-header .block-menu .content {
 		font-size: 17px;
@@ -532,6 +534,9 @@ p + h3 {
 		bottom: 5%;
 		right: 5%;
 		left: 5%;
+	}
+	.block-eatlas-splash-screen .splash-screen img {
+		zoom: 0.8;
 	}
 
 	/* Reduce the padding (50%) around the page content bellow the map */
@@ -563,13 +568,33 @@ p + h3 {
 	#container {
 		margin: 0 5%;
 	}
+
+
+	.eatlas-map-client-map .aims-map-ui-container .aims-map-ui-row-container .aims-map-row-panel {
+		flex-wrap: nowrap;
+	}
+
+	.eatlas-map-client-map .aims-map-ui-container .aims-map-ui-row-container .aims-map-row-panel .aims-section-content {
+		width: auto;
+		order: 1;
+	}
+
+	.eatlas-map-client-map .aims-map-ui-container .aims-map-ui-row-container .aims-map-row-panel .aims-actions {
+		background: inherit;
+	}
 }
 
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
 	/* Reduce font size */
 	body, .region-header .block-menu .content {
 		font-size: 16px;
+	}
+
+	.header .amps-logo {
+		margin: 0 1em;
+	}
+	.header .amps-home {
+		margin: 0 0.5em;
 	}
 
   .eatlas_spatial_publisher_map .map_panel .content .panel-header h1.title {
@@ -584,31 +609,4 @@ p + h3 {
   .field-name-field-overview-map img {
     max-width: 300px;
   }
-}
-
-
-@media screen and (max-width: 400px) {
-	/* Reduce font size */
-	body, .region-header .block-menu .content {
-		font-size: 15px;
-	}
-
-	.header .amps-logo {
-		margin: 0 1em;
-	}
-}
-
-@media (max-width: 768px) {
-	.eatlas-map-client-map .aims-map-ui-container .aims-map-ui-row-container .aims-map-row-panel {
-		flex-wrap: nowrap;
-	}
-
-	.eatlas-map-client-map .aims-map-ui-container .aims-map-ui-row-container .aims-map-row-panel .aims-section-content {
-		width: auto;
-		order: 1;
-	}
-
-	.eatlas-map-client-map .aims-map-ui-container .aims-map-ui-row-container .aims-map-row-panel .aims-actions {
-		background: inherit;
-	}
 }
