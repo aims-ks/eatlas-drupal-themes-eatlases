@@ -14,7 +14,6 @@ stylesheets[print][] = css/print.css
 
 scripts[] = js/field_video_url_resize.js
 
-
 ; Define new block regions
 ; * "Floating left sidebar": (private) Display the admin menu outside the page block, to preserve the layout
 
