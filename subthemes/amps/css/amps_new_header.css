@@ -179,7 +179,6 @@
 div.amps-header-image-wrapper {
   position: relative;
   width: 100%;
-  max-height: 35rem;
   overflow: hidden;
   background-color: #333333;
 }
@@ -217,6 +216,19 @@ div.amps-header-image-wrapper div.amps-header-image-inner-wrapper {
 
 	/* Add some padding to create a prettier gradient behind the title, and prevent the title from touching the edge of the header div */
 	padding: 1em 0.5em 2.1rem 0.5em;
+}
+
+.amps-header-image-wrapper .amps-header-attributions {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0.5em 1em;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+.amps-header-image-wrapper .amps-header-attributions a {
+    color: #FFFFFF;
 }
 
 @media screen and (min-width: 1024px) {
