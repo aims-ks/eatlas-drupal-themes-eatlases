@@ -20,7 +20,6 @@
 	margin-top: 1em;
 }
 
-html,
 body,
 #wrapper,
 #container,
@@ -52,3 +51,22 @@ div.mediaframe_onImage div.metadata {
 div.mediaframe_onImage div.title {
 	color: #000000;
 }
+
+/**
+ * Gael 2019-04-30
+ * Patch to fix issue with the Wysiwyg module:
+ *     The module apply unrelated style groups (such as the print styles)
+ *     https://www.drupal.org/project/wysiwyg/issues/3051597
+ */
+body.cke_editable {
+        font-size: 1em;
+}
+
+body.cke_editable,
+body.cke_editable #wrapper,
+body.cke_editable #container,
+body.cke_editable .page-content_with-column,
+body.cke_editable .page-content_full-width {
+        overflow: auto;
+}
+
