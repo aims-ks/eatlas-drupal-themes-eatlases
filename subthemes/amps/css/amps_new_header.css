@@ -176,27 +176,34 @@
 }
 
 
-
-.amps-header-image {
-	/* Use "min-height" instead of "height" to allow very long title to stretch the header div */
-	min-height: 35em;
-
-	/* Cover the while header div with the background image (image URL specified in the HTML) */
-	background-position: center center;
-	background-size: cover;
-
-	/* Use table to position the title at the bottom of the header div (NOTE: IE has very bad flex support) */
-	display: table;
-	width: 100%;
+div.amps-header-image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #333333;
 }
 
-.amps-header-image .amps-header-title {
-	/* Place the title at the bottom of the header div */
-	display: table-cell;
-	vertical-align: bottom;
+div.amps-header-image-wrapper div.amps-header-image-inner-wrapper {
+  position: relative;
+  max-width: 1920px;
+  max-height: 576px;
+  margin: 0 auto;
 }
 
-.amps-header-image .amps-header-title .page-title {
+.amps-header-image-wrapper .amps-header-image img {
+  width: 100%;
+}
+
+.amps-header-image-wrapper .amps-header-title {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  margin-top: auto;
+}
+
+.amps-header-image-wrapper .amps-header-title .page-title {
 	/* Centred white text, with gradient */
 	text-align: center;
 	color: #FFFFFF;
@@ -211,34 +218,36 @@
 	padding: 1em 0.5em 2.1rem 0.5em;
 }
 
-
-@media screen and (max-width: 1024px) {
-	.amps-header-image {
-		/* Header div shrink when page get small */
-		min-height: 30vw;
-	}
+.amps-header-image-wrapper .amps-header-attributions {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0.5em 1em;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+.amps-header-image-wrapper .amps-header-attributions a {
+    color: #FFFFFF;
 }
 
-@media screen and (min-width: 640px) {
-  .amps-header-image .amps-header-title .page-title {
-    /* Fixed title font size when page is large */
-    font-size: 1.7rem;
-    padding-bottom: 2.6rem;
+@media screen and (min-width: 1024px) {
+  .amps-header-image-wrapper .amps-header-title .page-title {
+    font-size: 3rem;
+    padding-bottom: 3.5rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .amps-header-image .amps-header-title .page-title {
-    /* Fixed title font size when page is large */
+  .amps-header-image-wrapper .amps-header-title .page-title {
     font-size: 2.4rem;
     padding-bottom: 3rem;
   }
 }
 
-@media screen and (min-width: 1024px) {
-	.amps-header-image .amps-header-title .page-title {
-		/* Fixed title font size when page is large */
-    font-size: 3rem;
-    padding-bottom: 3.5rem;
-	}
+@media screen and (min-width: 640px) {
+  .amps-header-image-wrapper .amps-header-title .page-title {
+    font-size: 1.7rem;
+    padding-bottom: 2.6rem;
+  }
 }

@@ -78,6 +78,11 @@ p + h3 {
 	background-color: #FFFFFF;
 }
 
+/* Add a border around the first sub-menu of the navigation menu */
+.region-header .block-menu div.content > ul.menu > li > ul {
+	border: 1px solid #d4d4d4;
+}
+
 .region-header .block-menu ul.menu li:hover ul {
 	top: 52px; /* relative to li: 32 + 20 */
 }
@@ -171,6 +176,9 @@ p + h3 {
 	position: absolute;
 	left: 0;
 	right: 0;
+  top: 55px; /* relative to header */
+  border-bottom: 1px solid #d4d4d4;
+  box-shadow: 0 2px 6px 0 rgba(80,80,80,0.1);
 }
 .region-header .eatlas-responsive-menu-container ul.accordion-menu,
 .region-header .eatlas-responsive-menu-container ul.accordion-menu li.expanded ul li a {
@@ -282,6 +290,18 @@ p + h3 {
 	width: 150px;
 }
 
+.header .amps-home {
+	margin: 0 1em;
+}
+.header .amps-home img {
+	width: 25px;
+	opacity: 0.2;
+	transition: opacity 0.2s;
+}
+.header .amps-home img:hover {
+	opacity: 1;
+}
+
 .block-search .search-block-overlay .search-overlay-content {
 	top: 25px;
 }
@@ -331,8 +351,12 @@ p + h3 {
   margin-top: 0;
 }
 
-.eatlas_spatial_publisher_map .map_panel .content .node-block .node-title a{
+.eatlas_spatial_publisher_map .map_panel .content .node-block .node-title a {
   text-decoration: none;
+}
+
+.eatlas_spatial_publisher_map .flexslider-wrapper .flexslider-image {
+  max-height: 576px;
 }
 
 /* Footer */
@@ -445,12 +469,6 @@ p + h3 {
 	margin-left: 230px; /* Same as the sidebar-first width + 30px spacing */
 }
 
-/* Make media frame images looks more centered - should be set in the eAtlas Media frame module */
-div.mediaframe_wikipedia,
-div.mediaframe_gallery {
-	margin-left: -0.25em;
-}
-
 #species-list .scientific-name {
 	font-size: 0.8em;
 	font-style: italic;
@@ -458,8 +476,16 @@ div.mediaframe_gallery {
 }
 
 /**
- * Override mapping client styles for feature requests
+ * Override mapping client styles
  */
+.eatlas-map-client-map {
+  box-shadow: 0 8px 8px -8px #666666;
+}
+
+.eatlas-map-client-map .aims-map-ui-container .aims-map-ui-row-container .aims-map-row-panel {
+  max-width: 600px;
+}
+
 .eatlas-map-client-map .aims-map-row-panel.bottom .aims-section-header {
 	display: none;
 }
@@ -477,6 +503,7 @@ div.mediaframe_gallery {
 .eatlas-map-client-map .aims-map-row-panel.bottom .aims-section-content .aims-map-get-features div.aims-map-get-features-container h1 {
 	font-size: 24px;
 }
+
 
 /* Hamburger menu */
 @media screen and (max-width: 1200px) {
@@ -496,7 +523,8 @@ div.mediaframe_gallery {
 	}
 }
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 768px) {
 	/* Reduce font size */
 	body, .region-header .block-menu .content {
 		font-size: 17px;
@@ -512,11 +540,18 @@ div.mediaframe_gallery {
 		right: 5%;
 		left: 5%;
 	}
+	.block-eatlas-splash-screen .splash-screen img {
+		zoom: 0.8;
+	}
 
 	/* Reduce the padding (50%) around the page content bellow the map */
 	.eatlas_spatial_publisher_map .map_panel .content {
 		padding: 1em;
 	}
+
+  .eatlas_spatial_publisher_map .map_panel .content .panel-header h1.title {
+    font-size: 1.5em;
+  }
 
 	/* Remove the sidebar-first (the 2nd level menu) */
 	#sidebar-first {
@@ -538,29 +573,8 @@ div.mediaframe_gallery {
 	#container {
 		margin: 0 5%;
 	}
-}
 
 
-@media screen and (max-width: 600px) {
-	/* Reduce font size */
-	body, .region-header .block-menu .content {
-		font-size: 16px;
-	}
-}
-
-
-@media screen and (max-width: 400px) {
-	/* Reduce font size */
-	body, .region-header .block-menu .content {
-		font-size: 15px;
-	}
-
-	.header .amps-logo {
-		margin: 0 1em;
-	}
-}
-
-@media (max-width: 768px) {
 	.eatlas-map-client-map .aims-map-ui-container .aims-map-ui-row-container .aims-map-row-panel {
 		flex-wrap: nowrap;
 	}
@@ -573,4 +587,31 @@ div.mediaframe_gallery {
 	.eatlas-map-client-map .aims-map-ui-container .aims-map-ui-row-container .aims-map-row-panel .aims-actions {
 		background: inherit;
 	}
+}
+
+@media screen and (max-width: 640px) {
+	/* Reduce font size */
+	body, .region-header .block-menu .content {
+		font-size: 16px;
+	}
+
+	.header .amps-logo {
+		margin: 0 1em;
+	}
+	.header .amps-home {
+		margin: 0 0.5em;
+	}
+
+  .eatlas_spatial_publisher_map .map_panel .content .panel-header h1.title {
+    font-size: 1.2em;
+  }
+
+  .field-name-field-overview-map {
+    width: 100%;
+    text-align: center;
+  }
+
+  .field-name-field-overview-map img {
+    max-width: 300px;
+  }
 }

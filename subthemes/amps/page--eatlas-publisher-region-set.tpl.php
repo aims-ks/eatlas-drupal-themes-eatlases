@@ -24,6 +24,7 @@ $context = new EAtlas_spatial_publisher_template_context($node, NULL);
 			?>
 
 			<div class="amps-logo"><a href="/amps"><img src="/<?php print $theme_path; ?>/img/logo-marine-parks.svg" /></a></div>
+			<div class="amps-home"><a href="/amps"><img src="/<?php print $theme_path; ?>/img/home-icon.svg" /></a></div>
 
 			<?php print render($page['header']); ?>
 			<?php print render($page['header_print']); ?>

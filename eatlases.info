@@ -14,7 +14,6 @@ stylesheets[print][] = css/print.css
 
 scripts[] = js/field_video_url_resize.js
 
-
 ; Define new block regions
 ; * "Floating left sidebar": (private) Display the admin menu outside the page block, to preserve the layout
 
@@ -37,5 +36,5 @@ regions[page_bottom] = Page bottom
 ; Attributes used by the update module.
 ; There fields needs to be removed if the module is migrated to Drupal.org
 project status url = "http://drupal.eatlas.org.au/themes"
-version = "7.x-2.43"
+version = "7.x-2.53"
 project = "eatlases"

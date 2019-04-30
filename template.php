@@ -51,14 +51,28 @@ function eatlases_menu_link($variables) {
 		}
 	}
 
-	// Do not render the link on parent menu items that leads to the 404 page.
+	// Fix some issues with menu links
 	// Original:
 	//     File: www/includes/menu.inc
 	//     Function: theme_menu_link
 	//     Line: 1625
-	$element = $variables['element'];
+	$element = &$variables['element'];
 	$href_alias = drupal_get_path_alias($element['#href']);
 
+	// Add target="_blank" to external links in menus
+	//   using localized_options
+	if (!isset($element['#localized_options']['attributes'])) {
+		$element['#localized_options']['attributes'] = array();
+	}
+	if (isset($element['#original_link']['external']) && $element['#original_link']['external']) {
+		$element['#localized_options']['attributes']['target'] = '_blank';
+	}
+	// Remove the title if it's empty
+	if (isset($element['#localized_options']['attributes']['title']) && empty($element['#localized_options']['attributes']['title'])) {
+		unset($element['#localized_options']['attributes']['title']);
+	}
+
+	// Do not render the link on parent menu items that leads to the 404 page.
 	if ($element['#below'] && $href_alias === '404') {
 		$sub_menu = drupal_render($element['#below']);
 		// Add a useless "a" tag, for more consistancy (works better with existing CSS)
