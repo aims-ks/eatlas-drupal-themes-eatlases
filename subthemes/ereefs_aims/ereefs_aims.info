@@ -1,22 +1,16 @@
-name = eAtlases
+name = eReefs AIMS
 
-description = A multi-theme used for all the eAtlases
+description = eReefs AIMS theme (eReefs2)
 
 core = 7.x
 
-engine = phptemplate
+base theme = eatlases
 
-stylesheets[all][] = css/main.css
-stylesheets[all][] = css/column.css
-stylesheets[all][] = css/form.css
-stylesheets[all][] = css/responsive.css
-stylesheets[print][] = css/print.css
-
-scripts[] = js/field_video_url_resize.js
+stylesheets[all][] = css/ereefs_aims.css
 
 ; Define new block regions
 ; * "Floating left sidebar": (private) Display the admin menu outside the page block, to preserve the layout
-
+; NOTE: Regions configuration do not inherit from parent.
 regions[sidebar_first] = First sidebar
 regions[sidebar_second] = Second sidebar
 regions[sidebar_float] = Floating left sidebar
@@ -32,9 +26,3 @@ regions[footer] = Footer
 ; Reserved regions; to render Drupal elements such as the Admin menu
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
-
-; Attributes used by the update module.
-; There fields needs to be removed if the module is migrated to Drupal.org
-project status url = "http://drupal.eatlas.org.au/themes"
-version = "7.x-2.54"
-project = "eatlases"
