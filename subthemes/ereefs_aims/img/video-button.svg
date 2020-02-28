@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg4710"
+   version="1.1"
+   viewBox="0 0 53.866001 53.866001"
+   height="53.866001mm"
+   width="53.866001mm">
+  <defs
+     id="defs4704">
+    <filter
+       id="filter4685"
+       style="color-interpolation-filters:sRGB">
+      <feFlood
+         id="feFlood4675"
+         result="flood"
+         flood-color="rgb(0,0,0)"
+         flood-opacity="0.498039" />
+      <feComposite
+         id="feComposite4677"
+         result="composite1"
+         operator="in"
+         in2="SourceGraphic"
+         in="flood" />
+      <feGaussianBlur
+         id="feGaussianBlur4679"
+         result="blur"
+         stdDeviation="1.5"
+         in="composite1" />
+      <feOffset
+         id="feOffset4681"
+         result="offset"
+         dy="1"
+         dx="1" />
+      <feComposite
+         id="feComposite4683"
+         result="composite2"
+         operator="over"
+         in2="offset"
+         in="SourceGraphic" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata4707">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-243.134)"
+     id="layer1">
+    <g
+       style="filter:url(#filter4685)"
+       id="g4625"
+       transform="translate(-77.908828,105.82779)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3.99999976;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path4569"
+         cx="104.84187"
+         cy="164.23917"
+         r="22.444204" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 96.885203,153.6099 v 20.71339 l 20.980657,-10.42352 z"
+         id="path4571" />
+    </g>
+  </g>
+</svg>
