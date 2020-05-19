@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
 
 	<!-- OpenLayers requirement for old environments like Internet Explorer and Android 4.x -->
-	<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+	<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL,Array.prototype.includes,String.prototype.padStart"></script>
 
 	<?php print $styles; ?>
 	<?php print $scripts; ?>
