@@ -11,6 +11,10 @@
 	background: #1887A3 url('../img/header-front-background.jpg') no-repeat center 40px;
 }
 
+#wrapper {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 1060px) {
 	/* Remove the sidebar-first (the 2nd level menu) */
 	#sidebar-first {
