@@ -64,7 +64,7 @@ ol.breadcrumb li.last:after {
 .banner {
 	background-color: #FFFFFF;
 	/* Display background colour for children margin (collapsing margins) */
-	padding: 1px;
+	padding: 0;
 }
 
 .eatlas-login,
