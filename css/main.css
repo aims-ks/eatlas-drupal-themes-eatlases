@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background-color: #D9D9D9;
+	background-color: #FFFFFF;
 	font-family: verdana, sans-serif;
 	margin: 0;
 	padding: 0;
@@ -64,7 +64,7 @@ ol.breadcrumb li.last:after {
 .banner {
 	background-color: #FFFFFF;
 	/* Display background colour for children margin (collapsing margins) */
-	padding: 1px;
+	padding: 0;
 }
 
 .eatlas-login,
@@ -177,13 +177,12 @@ ol.breadcrumb li.last:after {
 	clear: both;
 }
 
-#wrapper {
-	background-color: #FFFFFF;
+#wrapper, #footer-wrapper {
 	margin: 0 auto 2em auto;
 	/* This is a trick to include the inner element margin in this element (remove the gray line at the top of the page) */
 	overflow: auto;
 }
-#container {
+#container, #footer-wrapper {
 	margin: 1em 50px 40px 50px;
 }
 
@@ -685,6 +684,13 @@ span.edit-link a {
 
 .gallery-image {
 	margin: 0.5em;
+}
+
+/**
+ * Override mapping client styles
+ */
+.eatlas-map-client-map {
+  box-shadow: 0 8px 8px -8px #666666;
 }
 
 /* Dataset teasers (Mini records) */
