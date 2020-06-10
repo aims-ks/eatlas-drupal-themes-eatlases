@@ -167,6 +167,9 @@ ol.breadcrumb li.last:after {
 
 .header {
 	background-color: #034581;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
 
 .region-header {
