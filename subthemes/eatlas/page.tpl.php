@@ -261,12 +261,16 @@ if (isset($page['content']['system_main']['nodes'][arg(1)])) {
 					</div>
 				<?php endif; ?>
 
-				<footer>
-					<div id="footer" class="nocontent">
-						<?php print render($page['footer_print']); ?>
-						<?php print render($page['footer']); ?>
-					</div>
-				</footer>
-			</div> <!-- /#container -->
-		</div> <!-- /#wrapper -->
-	</section>
+      </div> <!-- /#container -->
+    </div> <!-- /#wrapper -->
+    <footer>
+      <div id="footer" class="nocontent">
+        <div id="wrapper">
+          <div id="container">
+            <?php print render($page['footer_print']); ?>
+            <?php print render($page['footer']); ?>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
