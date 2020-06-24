@@ -180,12 +180,10 @@ ol.breadcrumb li.last:after {
 	clear: both;
 }
 
-#wrapper, #footer-wrapper {
+#wrapper {
 	margin: 0 auto 2em auto;
-	/* This is a trick to include the inner element margin in this element (remove the gray line at the top of the page) */
-	overflow: auto;
 }
-#container, #footer-wrapper {
+#container {
 	margin: 1em 50px 40px 50px;
 }
 
