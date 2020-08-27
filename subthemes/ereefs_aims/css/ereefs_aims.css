@@ -420,6 +420,40 @@ div.mediaframe_gallery {
 	margin-left: -0.25em;
 }
 
+pre code {
+  display: block;
+  padding: 0.8em;
+  margin: 0 0 10px;
+  overflow: auto;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+pre code.output {
+  background-color: #ffffff;
+}
+
+.content table {
+  font-size: 0.9em;
+}
+
+.content table th {
+  padding: 0.1em 0.8em;
+  border: 1px solid #dfe2e5;
+  font-weight: bold;
+}
+
+.content table td {
+  padding: 0.1em 0.8em;
+  border: 1px solid #dfe2e5;
+}
+
 /* iPad = 768px x 1024px */
 @media screen and (max-width: 1100px) {
 	.ereefs-footer .logo-container img {
@@ -486,7 +520,7 @@ div.mediaframe_gallery {
 	.ereefs-footer {
 		/* We added 10% to the container width (5% + 5%)
 		 * The container width is now 110%
-		 * To have the margin occupy that extra space, 
+		 * To have the margin occupy that extra space,
 		 * it needs to be 11% smaller (I not sure why, I can't figure out the maths...)
 		 * 11% devided by 2 (left and right) = 5.5% */
 		margin-left: -5.5%;
@@ -503,16 +537,18 @@ div.mediaframe_gallery {
 }
 
 @media screen and (max-width: 600px) {
-	.large-image-header .button-wrapper .button {
-		font-size: 1.5em;
-	}
-	.large-image-header .button-wrapper .button img {
-		width: 50px;
-	}
+  .large-image-header .button-wrapper .button {
+    font-size: 1.5em;
+  }
+
+  .large-image-header .button-wrapper .button img {
+    width: 50px;
+  }
+}
 
 @media screen and (max-width: 390px) {
 	.ereefs-header .attributions {
-	        font-size: 0.5em;
+    font-size: 0.5em;
 	}
 }
 
