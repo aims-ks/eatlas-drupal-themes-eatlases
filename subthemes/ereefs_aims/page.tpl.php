@@ -52,10 +52,10 @@ $_visualisationMenu = NULL;
 $_searchForm = NULL;
 foreach ($page['header'] as $blockDelta => $block) {
   if (isset($block['#block']) && is_object($block['#block'])) {
-    if ($block['#block']->delta === 'menu-aims-ereefs-app-menu') {
+    if ($block['#block']->delta === 'menu-menu-aims-ereefs-app-menu') {
       $_appMenu = $block;
       hide($page['header'][$blockDelta]);
-    } else if ($block['#block']->delta === 'menu-menu-aims-ereefs') {
+    } else if ($block['#block']->delta === 'menu-menu-ereefs-aims') {
       // AIMS eReefs Visualisation Portal menu
       $_visualisationMenu = $block;
       hide($page['header'][$blockDelta]);
