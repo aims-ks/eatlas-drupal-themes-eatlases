@@ -107,7 +107,7 @@ nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu ul.menu li a:hover {
 }
 
 nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu ul.menu li ul.menu {
-  margin-top: 8px;
+  padding-top: 8px;
   background: #2c4e72;
 }
 
@@ -548,17 +548,30 @@ pre code.output {
     padding: 0.5rem 1.8rem;
   }
 
-	.region-header .eatlas-responsive-menu ul.menu {
-		display: none;
-	}
-	.eatlas-responsive-menu-container {
-		display: block;
-	}
+  nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li a {
+    padding: 0.5rem 1.4rem;
+  }
 }
 
 @media screen and (max-width: 960px) {
   nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu ul.menu li a {
     padding: 0.5rem 0.75rem;
+  }
+
+  nav#extraction-tool-nav-bar a.navbar-title {
+    flex-grow: 1;
+  }
+
+  nav#extraction-tool-nav-bar #basic-navbar-nav #block-menu-menu-menu-ereefs-aims {
+    width: auto;
+  }
+
+  .region-header .eatlas-responsive-menu ul.menu {
+    display: none;
+  }
+
+  .eatlas-responsive-menu-container {
+    display: block;
   }
 
 	.large-image-header .button-wrapper .button {
@@ -653,10 +666,6 @@ pre code.output {
   nav#extraction-tool-nav-bar a.navbar-title {
     font-size: 1.2rem;
     white-space: normal;
-  }
-
-  nav#extraction-tool-nav-bar #basic-navbar-nav #block-menu-menu-menu-ereefs-aims {
-    width: auto;
   }
 
   .large-image-header .button-wrapper .button {
