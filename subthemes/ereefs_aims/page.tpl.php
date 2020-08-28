@@ -71,6 +71,7 @@ foreach ($page['header'] as $blockDelta => $block) {
   <div class="container">
     <div class="region region-header" id="app-navbar-nav">
       <?php print render($_appMenu); ?>
+      <?php print render($_searchForm); ?>
     </div>
   </div>
 </nav>
