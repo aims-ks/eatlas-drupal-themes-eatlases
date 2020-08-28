@@ -31,44 +31,59 @@ if (isset($node)) {
 }
 
 ?>
-	<header>
-		<div class="header nocontent">
-			<?php
-			// Find the 3 blocks of the top menu and "hide" them from the header
-			$_mainMenuLeft = NULL;
-			$_mainMenuRight = NULL;
-			$_searchForm = NULL;
-			foreach($page['header'] as $blockDelta => $block) {
-				if (isset($block['#block']) && is_object($block['#block'])) {
-					if ($block['#block']->delta === 'main-menu') {
-						$_mainMenuLeft = $block;
-						hide($page['header'][$blockDelta]);
-					} else if ($block['#block']->subject === 'Main menu right') {
-						$_mainMenuRight = $block;
-						hide($page['header'][$blockDelta]);
-					} else if ($block['#block']->module === 'search' && $block['#block']->delta === 'form') {
-						$_searchForm = $block;
-						hide($page['header'][$blockDelta]);
-					}
-				}
-			}
-			?>
-			<div id="main-menus">
-				<div class="main-menus-content">
-					<div class="menu-left">
-						<?php print render($_mainMenuLeft); ?>
-					</div>
-					<div class="menu-right">
-						<?php print render($_searchForm); ?>
-						<?php print render($_mainMenuRight); ?>
-					</div>
-				</div>
-			</div>
 
-			<?php print render($page['header']); ?>
-			<?php print render($page['header_print']); ?>
-		</div>
-	</header>
+<header class="app-header">
+  <div class="container">
+    <a class="aims-logo" href="https://www.aims.gov.au" title="Australian Institute of Marine Science">
+      <img src="<?php print base_path() . drupal_get_path('theme', 'ereefs_aims'); ?>/img/AIMS-logo.png" alt="Australian Institute of Marine Science logo" />
+    </a>
+    <div class="text-nowrap title">
+      <img class="aims-logo-sml"
+         src="<?php print base_path() . drupal_get_path('theme', 'ereefs_aims'); ?>/img/AIMS-logo-sml.png" alt="AIMS small logo" />
+      AIMS eReefs
+    </div>
+  </div>
+</header>
+
+<?php
+// Find the 3 blocks of the top menu and "hide" them from the header
+$_appMenu = NULL;
+$_visualisationMenu = NULL;
+$_searchForm = NULL;
+foreach ($page['header'] as $blockDelta => $block) {
+  if (isset($block['#block']) && is_object($block['#block'])) {
+    if ($block['#block']->delta === 'menu-aims-ereefs-app-menu') {
+      $_appMenu = $block;
+      hide($page['header'][$blockDelta]);
+    } else if ($block['#block']->delta === 'menu-menu-aims-ereefs') {
+      // AIMS eReefs Visualisation Portal menu
+      $_visualisationMenu = $block;
+      hide($page['header'][$blockDelta]);
+    } else if ($block['#block']->module === 'search' && $block['#block']->delta === 'form') {
+      $_searchForm = $block;
+      hide($page['header'][$blockDelta]);
+    }
+  }
+}
+?>
+
+<nav id="app-nav-bar">
+  <div class="container">
+    <div class="region region-header" id="app-navbar-nav">
+      <?php print render($_appMenu); ?>
+      <?php print render($_searchForm); ?>
+    </div>
+  </div>
+</nav>
+
+<nav id="extraction-tool-nav-bar">
+  <div class="container">
+    <div class="region region-header" id="basic-navbar-nav">
+      <a href="/ereefs-aims" class="navbar-title">AIMS eReefs Visualisation Portal</a>
+      <?php print render($_visualisationMenu); ?>
+    </div>
+  </div>
+</nav>
 
 	<section>
 		<!-- Banner (but only show in view mode, not in edit mode) -->
