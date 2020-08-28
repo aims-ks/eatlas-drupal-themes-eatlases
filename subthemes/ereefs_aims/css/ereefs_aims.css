@@ -81,38 +81,38 @@ nav#app-nav-bar #app-navbar-nav {
   display: flex;
 }
 
-nav#app-nav-bar #block-menu-menu-aims-ereefs-app-menu {
+nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu {
   margin: 0;
   width: auto;
   flex-grow: 1;
 }
 
-nav#app-nav-bar #block-menu-menu-aims-ereefs-app-menu ul.menu li a {
+nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu ul.menu li a {
   font-size: 1rem;
   padding: 0.5rem 2rem;
   height: auto;
 }
 
-nav#app-nav-bar #block-menu-menu-aims-ereefs-app-menu ul.menu li.active-trail a {
+nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu ul.menu li.active-trail a {
   font-weight: bold;
   text-decoration: underline;
 }
 
-nav#app-nav-bar #block-menu-menu-aims-ereefs-app-menu ul.menu li.leaf.first a {
+nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu ul.menu li.leaf.first a {
   padding-left: 0;
 }
 
-nav#app-nav-bar #block-menu-menu-aims-ereefs-app-menu ul.menu li a:hover {
+nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu ul.menu li a:hover {
   text-decoration: underline;
 }
 
-nav#app-nav-bar #block-menu-menu-aims-ereefs-app-menu ul.menu li ul.menu {
+nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu ul.menu li ul.menu {
   margin-top: 8px;
   background: #2c4e72;
 }
 
-nav#app-nav-bar #block-menu-menu-aims-ereefs-app-menu ul.menu li ul.menu li a,
-nav#app-nav-bar #block-menu-menu-aims-ereefs-app-menu ul.menu li ul.menu li.first a {
+nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu ul.menu li ul.menu li a,
+nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu ul.menu li ul.menu li.first a {
   padding-left: 1rem;
 }
 
@@ -153,7 +153,7 @@ nav#extraction-tool-nav-bar #basic-navbar-nav {
   align-items: center;
 }
 
-nav#extraction-tool-nav-bar #basic-navbar-nav #block-menu-menu-menu-aims-ereefs {
+nav#extraction-tool-nav-bar #basic-navbar-nav #block-menu-menu-menu-ereefs-aims {
   flex-direction: row;
   display: flex;
   padding-left: 0;
@@ -161,23 +161,23 @@ nav#extraction-tool-nav-bar #basic-navbar-nav #block-menu-menu-menu-aims-ereefs 
   list-style: none;
 }
 
-nav#extraction-tool-nav-bar #block-menu-menu-menu-aims-ereefs ul.menu li a {
+nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li a {
   font-size: 1rem;
   padding: 0.5rem 2rem;
   height: auto;
   color: #25425f;
 }
 
-nav#extraction-tool-nav-bar #block-menu-menu-menu-aims-ereefs ul.menu li a:hover {
+nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li a:hover {
   text-decoration: underline;
 }
 
-nav#extraction-tool-nav-bar #block-menu-menu-menu-aims-ereefs ul.menu li ul.menu {
+nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu {
   margin-top: 8px;
 }
 
-nav#extraction-tool-nav-bar #block-menu-menu-menu-aims-ereefs ul.menu li ul.menu li a,
-nav#extraction-tool-nav-bar #block-menu-menu-menu-aims-ereefs ul.menu li ul.menu li.first a {
+nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu li a,
+nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu li.first a {
   padding-left: 1rem;
 }
 
@@ -544,7 +544,7 @@ pre code.output {
 
 /* Toggle navigation menus */
 @media screen and (max-width: 1200px) {
-  nav#app-nav-bar #block-menu-menu-aims-ereefs-app-menu ul.menu li a {
+  nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu ul.menu li a {
     padding: 0.5rem 1.8rem;
   }
 
@@ -557,7 +557,7 @@ pre code.output {
 }
 
 @media screen and (max-width: 960px) {
-  nav#app-nav-bar #block-menu-menu-aims-ereefs-app-menu ul.menu li a {
+  nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu ul.menu li a {
     padding: 0.5rem 0.75rem;
   }
 
@@ -630,16 +630,16 @@ pre code.output {
     flex-flow: column nowrap;
   }
 
-  nav#app-nav-bar #block-menu-menu-aims-ereefs-app-menu .content > ul.menu {
+  nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu .content > ul.menu {
     display: flex;
     flex-direction: column;
   }
 
-  nav#app-nav-bar #block-menu-menu-aims-ereefs-app-menu ul.menu li {
+  nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu ul.menu li {
     display: block;
   }
 
-  nav#app-nav-bar #block-menu-menu-aims-ereefs-app-menu ul.menu li a {
+  nav#app-nav-bar #block-menu-menu-menu-aims-ereefs-app-menu ul.menu li a {
     padding-left: 0;
     padding-right: 0;
   }
@@ -655,7 +655,7 @@ pre code.output {
     white-space: normal;
   }
 
-  nav#extraction-tool-nav-bar #basic-navbar-nav #block-menu-menu-menu-aims-ereefs {
+  nav#extraction-tool-nav-bar #basic-navbar-nav #block-menu-menu-menu-ereefs-aims {
     width: auto;
   }
 
