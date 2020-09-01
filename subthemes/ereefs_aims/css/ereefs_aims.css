@@ -173,7 +173,13 @@ nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li a:hover
 }
 
 nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu {
-  margin-top: 8px;
+  padding-top: 8px;
+  background: #ffffff;
+}
+
+nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu li {
+  border-top: 1px dotted #25425f;
+  width: 350px;
 }
 
 nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu li a,
@@ -376,6 +382,59 @@ nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu
 
 
 
+/* Help pages */
+
+ul#list-of-help-articles {
+  list-style: none;
+  margin: 0 0 0.75em 0;
+  padding: 0;
+}
+
+ul#list-of-help-articles li {
+  border-top: 1px dashed #999999;
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0;
+}
+
+ul#list-of-help-articles li a {
+  font-weight: bold;
+}
+
+pre code {
+  display: block;
+  padding: 0.8em;
+  margin: 0 0 10px;
+  overflow: auto;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+pre code.output {
+  background-color: #ffffff;
+}
+
+.content table {
+  font-size: 0.9em;
+}
+
+.content table th {
+  padding: 0.1em 0.8em;
+  border: 1px solid #dfe2e5;
+  font-weight: bold;
+}
+
+.content table td {
+  padding: 0.1em 0.8em;
+  border: 1px solid #dfe2e5;
+}
+
+
 /* Footer */
 
 .ereefs-footer {
@@ -491,40 +550,6 @@ nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu
 div.mediaframe_wikipedia,
 div.mediaframe_gallery {
 	margin-left: -0.25em;
-}
-
-pre code {
-  display: block;
-  padding: 0.8em;
-  margin: 0 0 10px;
-  overflow: auto;
-  font-size: 13px;
-  line-height: 1.42857143;
-  color: #333;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-pre code.output {
-  background-color: #ffffff;
-}
-
-.content table {
-  font-size: 0.9em;
-}
-
-.content table th {
-  padding: 0.1em 0.8em;
-  border: 1px solid #dfe2e5;
-  font-weight: bold;
-}
-
-.content table td {
-  padding: 0.1em 0.8em;
-  border: 1px solid #dfe2e5;
 }
 
 /* iPad = 768px x 1024px */
