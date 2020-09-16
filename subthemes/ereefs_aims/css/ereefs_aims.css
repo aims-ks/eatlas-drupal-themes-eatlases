@@ -130,11 +130,11 @@ nav#app-nav-bar #block-search-form input[type="submit"] {
   margin-right: 0;
 }
 
-nav#extraction-tool-nav-bar {
+nav#visualisation-portal-nav-bar {
   background: #ffffff;
 }
 
-nav#extraction-tool-nav-bar a.navbar-title {
+nav#visualisation-portal-nav-bar a.navbar-title {
   display: inline-block;
   color: #25425f;
   padding: 0;
@@ -146,14 +146,14 @@ nav#extraction-tool-nav-bar a.navbar-title {
   text-decoration: none;
 }
 
-nav#extraction-tool-nav-bar #basic-navbar-nav {
+nav#visualisation-portal-nav-bar #basic-navbar-nav {
   display: flex !important;
   flex-basis: auto;
   flex-grow: 1;
   align-items: center;
 }
 
-nav#extraction-tool-nav-bar #basic-navbar-nav #block-menu-menu-menu-ereefs-aims {
+nav#visualisation-portal-nav-bar #basic-navbar-nav #block-menu-menu-menu-ereefs-aims {
   flex-direction: row;
   display: flex;
   padding-left: 0;
@@ -161,33 +161,59 @@ nav#extraction-tool-nav-bar #basic-navbar-nav #block-menu-menu-menu-ereefs-aims 
   list-style: none;
 }
 
-nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li a {
+nav#visualisation-portal-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li a {
   font-size: 1rem;
   padding: 0.5rem 2rem;
   height: auto;
   color: #25425f;
 }
 
-nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li a:hover {
+nav#visualisation-portal-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li a:hover {
   text-decoration: underline;
 }
 
-nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu {
+nav#visualisation-portal-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu {
   padding-top: 8px;
   background: #ffffff;
 }
 
-nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu li {
+nav#visualisation-portal-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu li {
   border-top: 1px dotted #25425f;
   width: 350px;
 }
 
-nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu li a,
-nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu li.first a {
+nav#visualisation-portal-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu li a,
+nav#visualisation-portal-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li ul.menu li.first a {
   padding-left: 1rem;
 }
 
+nav#visualisation-portal-nav-bar #block-menu-menu-menu-ereefs-aims .content {
+  width: 100%;
+}
 
+nav#visualisation-portal-nav-bar #block-menu-menu-menu-ereefs-aims .eatlas-responsive-menu-container .eatlas-responsive-menu-button {
+  padding: 0;
+}
+
+nav#visualisation-portal-nav-bar #block-menu-menu-menu-ereefs-aims .eatlas-responsive-menu-container ul.accordion-menu {
+  margin-top: 0.4rem;
+}
+
+nav#visualisation-portal-nav-bar #block-menu-menu-menu-ereefs-aims .eatlas-responsive-menu-container ul.accordion-menu li a {
+  font-size: 1rem;
+  padding: 0.8rem 0.5rem;
+  height: auto;
+  color: #25425f;
+}
+
+nav#visualisation-portal-nav-bar #block-menu-menu-menu-ereefs-aims .eatlas-responsive-menu-container ul.accordion-menu li {
+  border-top: 1px dotted #25425f;
+}
+
+nav#visualisation-portal-nav-bar #block-menu-menu-menu-ereefs-aims .eatlas-responsive-menu-container ul.accordion-menu li ul li a {
+  background: #ffffff;
+  padding-left: 1rem;
+}
 
 /**
  * Home page style
@@ -573,8 +599,12 @@ div.mediaframe_gallery {
     padding: 0.5rem 1.8rem;
   }
 
-  nav#extraction-tool-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li a {
-    padding: 0.5rem 1.4rem;
+  nav#visualisation-portal-nav-bar #block-menu-menu-menu-ereefs-aims ul.menu li a {
+    padding: 0.5rem 1rem;
+  }
+
+  nav#visualisation-portal-nav-bar a.navbar-title {
+    font-size: 1rem;
   }
 }
 
@@ -583,12 +613,8 @@ div.mediaframe_gallery {
     padding: 0.5rem 0.75rem;
   }
 
-  nav#extraction-tool-nav-bar a.navbar-title {
-    flex-grow: 1;
-  }
-
-  nav#extraction-tool-nav-bar #basic-navbar-nav #block-menu-menu-menu-ereefs-aims {
-    width: auto;
+  nav#visualisation-portal-nav-bar a.navbar-title {
+    display: none;
   }
 
   .region-header .eatlas-responsive-menu ul.menu {
@@ -688,7 +714,7 @@ div.mediaframe_gallery {
 }
 
 @media screen and (max-width: 600px) {
-  nav#extraction-tool-nav-bar a.navbar-title {
+  nav#visualisation-portal-nav-bar a.navbar-title {
     font-size: 1.2rem;
     white-space: normal;
   }
