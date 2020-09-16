@@ -76,7 +76,7 @@ foreach ($page['header'] as $blockDelta => $block) {
   </div>
 </nav>
 
-<nav id="extraction-tool-nav-bar">
+<nav id="visualisation-portal-nav-bar">
   <div class="container">
     <div class="region region-header" id="basic-navbar-nav">
       <a href="/ereefs-aims" class="navbar-title">AIMS eReefs Visualisation Portal</a>
