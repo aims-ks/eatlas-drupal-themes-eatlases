@@ -69,7 +69,10 @@
 .left-column .views-field-field-ea-rss-pubdate,
 .column .views-field-field-ea-rss-creationdate,
 .right-column .views-field-field-ea-rss-creationdate,
-.left-column .views-field-field-ea-rss-creationdate {
+.left-column .views-field-field-ea-rss-creationdate,
+.column .views-field-created,
+.right-column .views-field-created,
+.left-column .views-field-created {
 	font-size: 0.8em;
 }
 
@@ -81,7 +84,10 @@
 .left-column .views-field-field-ea-rss-pubdate .field-content,
 .column .views-field-field-ea-rss-creationdate .field-content,
 .right-column .views-field-field-ea-rss-creationdate .field-content,
-.left-column .views-field-field-ea-rss-creationdate .field-content {
+.left-column .views-field-field-ea-rss-creationdate .field-content,
+.column .views-field-created .field-content,
+.right-column .views-field-created .field-content,
+.left-column .views-field-created .field-content {
 	display: inline;
 	font-weight: bold;
 }
