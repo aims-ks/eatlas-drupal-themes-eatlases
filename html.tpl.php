@@ -16,9 +16,6 @@
 	<!-- For mobile devices - also works on iPad -->
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
 
-	<!-- OpenLayers requirement for old environments like Internet Explorer and Android 4.x -->
-	<script src="https://cdnjs.cloudflare.com/polyfill/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL,Array.prototype.includes,String.prototype.padStart,String.prototype.startsWith,String.prototype.endsWith"></script>
-
 	<?php print $styles; ?>
 	<?php print $scripts; ?>
 </head>
